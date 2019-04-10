@@ -1,255 +1,103 @@
-"""
-Optional: Data Parallelism
-==========================
-**Authors**: `Sung Kim <https://github.com/hunkim>`_ and `Jenny Kang <https://github.com/jennykang>`_
-
-In this tutorial, we will learn how to use multiple GPUs using ``DataParallel``.
-
-It's very easy to use GPUs with PyTorch. You can put the model on a GPU:
-
-.. code:: python
-
-    device = torch.device("cuda:0")
-    model.to(device)
-
-Then, you can copy all your tensors to the GPU:
-
-.. code:: python
-
-    mytensor = my_tensor.to(device)
-
-Please note that just calling ``my_tensor.to(device)`` returns a new copy of
-``my_tensor`` on GPU instead of rewriting ``my_tensor``. You need to assign it to
-a new tensor and use that tensor on the GPU.
-
-It's natural to execute your forward, backward propagations on multiple GPUs.
-However, Pytorch will only use one GPU by default. You can easily run your
-operations on multiple GPUs by making your model run parallelly using
-``DataParallel``:
-
-.. code:: python
-
-    model = nn.DataParallel(model)
-
-That's the core behind this tutorial. We will explore it in more detail below.
-"""
-
-
-######################################################################
-# Imports and parameters
-# ----------------------
-#
-# Import PyTorch modules and define parameters.
-#
-
-import torch
+# %matplotlib inline
+# import matplotlib.pylab as plt
+import torchvision.models as models
 import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
+import torch
+import numpy as np
+import pandas as pd
+import torchvision
+import torchvision.transforms as transforms
+import torch.nn.functional as F
+import torch.optim as optim
+import pickle
+import argparse
 
-# Parameters and DataLoaders
-input_size = 5
-output_size = 2
+from pruner import * 
+from models import *
+from stanford_dogs import *
 
-batch_size = 30
-data_size = 100
+device = 'cuda:0'
+BATCH_BASE=64
+TRAIN_BATCH_SIZE = BATCH_BASE*torch.cuda.device_count()
+TEST_BATCH_SIZE=BATCH_BASE*torch.cuda.device_count()
 
+transform_train = transforms.Compose([
+    transforms.RandomResizedCrop(224, scale=(0.5, 1.0)),
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor(),
+    transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+])
 
-######################################################################
-# Device
-#
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+transform_test = transforms.Compose([
+    transforms.RandomResizedCrop(224, scale=(0.5, 1.0)),
+    transforms.ToTensor(),
+    transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+])
 
-######################################################################
-# Dummy DataSet
-# -------------
-#
-# Make a dummy (random) dataset. You just need to implement the
-# getitem
-#
+trainset = StanfordDOGS(root='./stanford-dogs', train=True, download=True, 
+                        transform=transform_train)
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=TRAIN_BATCH_SIZE,
+                                         shuffle=True, num_workers=4)
 
-class RandomDataset(Dataset):
+testset = StanfordDOGS(root='./stanford-dogs', train=False, download=True, 
+                       transform=transform_test)
+testloader = torch.utils.data.DataLoader(testset, batch_size=TEST_BATCH_SIZE,
+                                         shuffle=False, num_workers=4)
 
-    def __init__(self, size, length):
-        self.len = length
-        self.data = torch.randn(length, size)
+net = torchvision.models.resnet34(pretrained=True)
+net = nn.DataParallel(net)
+net = net.to(device)
 
-    def __getitem__(self, index):
-        return self.data[index]
+train_losses, val_losses, train_accs, val_accs = [], [], [], []
+N_EPOCH=100
+LOG=25
 
-    def __len__(self):
-        return self.len
+def get_lr(epoch):
+    if (epoch+1) >= 75:
+        return 1e-3
+    elif (epoch+1) >= 50:
+        return 5e-3
+    return 1e-2
 
-rand_loader = DataLoader(dataset=RandomDataset(input_size, data_size),
-                         batch_size=batch_size, shuffle=True)
+criterion = nn.CrossEntropyLoss()
 
+for epoch in range(N_EPOCH):  # loop over the dataset multiple times
+    print('Starting epoch {}'.format(epoch+1))
+    net.train()
+    optimizer = optim.SGD(net.parameters(), lr=get_lr(epoch), momentum=0.9, weight_decay=1e-4)
+    for batch_idx, (inputs, labels) in enumerate(trainloader, 0):
+        # print('Batch {}'.format(batch_idx), flush=True)
+        # get the inputs
+        inputs, labels = inputs.to(device), labels.to(device)
 
-######################################################################
-# Simple Model
-# ------------
-#
-# For the demo, our model just gets an input, performs a linear operation, and
-# gives an output. However, you can use ``DataParallel`` on any model (CNN, RNN,
-# Capsule Net etc.)
-#
-# We've placed a print statement inside the model to monitor the size of input
-# and output tensors.
-# Please pay attention to what is printed at batch rank 0.
-#
+        # zero the parameter gradients
+        optimizer.zero_grad()
 
-class Model(nn.Module):
-    # Our model
+        # forward + backward + optimize
+        outputs = net(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
 
-    def __init__(self, input_size, output_size):
-        super(Model, self).__init__()
-        self.fc = nn.Linear(input_size, output_size)
+    #Validation
+    # print('Calculating validation accuracy')
+    net.eval()
+    tcorrect = 0.
+    running_loss = 0.
+    with torch.no_grad():
+        for idx, (inputs, labels) in enumerate(testloader, 0):
+            inputs, labels = inputs.to(device), labels.to(device)
+            outputs = net(inputs)
+            # print(outputs.device)
+            predictions = outputs.argmax(dim=1)
 
-    def forward(self, input):
-        output = self.fc(input)
-        print("\tIn Model: input size", input.size(),
-              "output size", output.size())
+            loss = criterion(outputs, labels)
+            running_loss += loss.item()
 
-        return output
+            bcorrect = labels.eq(predictions).sum()
+            tcorrect += bcorrect.item()
+    acc = tcorrect/(len(testloader)*testloader.batch_size)
+    avg_loss = running_loss/len(testloader)
+    print(acc, avg_loss)
 
-
-######################################################################
-# Create Model and DataParallel
-# -----------------------------
-#
-# This is the core part of the tutorial. First, we need to make a model instance
-# and check if we have multiple GPUs. If we have multiple GPUs, we can wrap
-# our model using ``nn.DataParallel``. Then we can put our model on GPUs by
-# ``model.to(device)``
-#
-
-model = Model(input_size, output_size)
-if torch.cuda.device_count() > 1:
-  print("Let's use", torch.cuda.device_count(), "GPUs!")
-  # dim = 0 [30, xxx] -> [10, ...], [10, ...], [10, ...] on 3 GPUs
-  model = nn.DataParallel(model)
-
-model.to(device)
-
-
-######################################################################
-# Run the Model
-# -------------
-#
-# Now we can see the sizes of input and output tensors.
-#
-
-for data in rand_loader:
-    input = data.to(device)
-    output = model(input)
-    print("Outside: input size", input.size(),
-          "output_size", output.size())
-
-
-######################################################################
-# Results
-# -------
-#
-# If you have no GPU or one GPU, when we batch 30 inputs and 30 outputs, the model gets 30 and outputs 30 as
-# expected. But if you have multiple GPUs, then you can get results like this.
-#
-# 2 GPUs
-# ~~~~~~
-#
-# If you have 2, you will see:
-#
-# .. code:: bash
-#
-#     # on 2 GPUs
-#     Let's use 2 GPUs!
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([5, 5]) output size torch.Size([5, 2])
-#         In Model: input size torch.Size([5, 5]) output size torch.Size([5, 2])
-#     Outside: input size torch.Size([10, 5]) output_size torch.Size([10, 2])
-#
-# 3 GPUs
-# ~~~~~~
-#
-# If you have 3 GPUs, you will see:
-#
-# .. code:: bash
-#
-#     Let's use 3 GPUs!
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#         In Model: input size torch.Size([10, 5]) output size torch.Size([10, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#     Outside: input size torch.Size([10, 5]) output_size torch.Size([10, 2])
-#
-# 8 GPUs
-# ~~~~~~~~~~~~~~
-#
-# If you have 8, you will see:
-#
-# .. code:: bash
-#
-#     Let's use 8 GPUs!
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([4, 5]) output size torch.Size([4, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#     Outside: input size torch.Size([30, 5]) output_size torch.Size([30, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#         In Model: input size torch.Size([2, 5]) output size torch.Size([2, 2])
-#     Outside: input size torch.Size([10, 5]) output_size torch.Size([10, 2])
-#
-
-
-######################################################################
-# Summary
-# -------
-#
-# DataParallel splits your data automatically and sends job orders to multiple
-# models on several GPUs. After each model finishes their job, DataParallel
-# collects and merges the results before returning it to you.
-#
-# For more information, please check out
-# https://pytorch.org/tutorials/beginner/former\_torchies/parallelism\_tutorial.html.
-#
+Print('Done')

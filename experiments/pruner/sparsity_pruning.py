@@ -13,12 +13,6 @@ import torch.optim as optim
 from .pruner import Pruner
 
 class SparsityPruner(Pruner):
-    def matches(self, name, tokens):
-        for t in tokens:
-            if t in name:
-                return True
-        return False
-
     def prune(self, to_retain, prune_global=False):
         if not prune_global:
             for name, param in self.model.named_parameters():

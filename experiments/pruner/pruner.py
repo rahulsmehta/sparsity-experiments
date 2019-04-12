@@ -9,6 +9,11 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 class Pruner():
+    def matches(self, name, tokens):
+        for t in tokens:
+            if t in name:
+                return True
+        return False
     
     def __init__(self, model, mask_classifier=True):
         super(Pruner, self).__init__()
@@ -18,18 +23,8 @@ class Pruner():
     
     
     def prune(self, to_retain):
-        return
+        pass 
             
     def apply_mask(self):
-        for name, param in self.model.named_parameters():
-            if 'bias' in name:
-                continue
-            if self.mask_classifier is not True and 'classifier' in name:
-                continue
-            if 'linear' in name:
-                continue
-            mask = self.masks[name]
-            param.requires_grad_(requires_grad=False)
-            param.mul_(mask)
-            param.requires_grad_(requires_grad=True)
+        pass
             

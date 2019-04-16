@@ -1,5 +1,6 @@
 #!/bin/bash
 CUDA_DEVICE=$1
-nohup python lt-iterative-norb-vgg.py test-norb-iterative-vgg --batch_size 64 --epoch 160 --ft 40 --log 100 --device cuda:$CUDA_DEVICE > test-norb-iterative-vgg.out 2> test-norb-iterative-vgg.err &
-echo $! > test-norb-iterative-vgg.pid
+ID=$2
+nohup python lt-iterative-norb-resnet.py test-norb-iterative-resnet-$ID --batch_size 128 --epoch 200 --ft 50 --log 100 --device cuda:$CUDA_DEVICE > test-norb-iterative-resnet-$ID.out 2> test-norb-iterative-resnet-$ID.err &
+echo $! > test-norb-iterative-resnet-$ID.pid
 

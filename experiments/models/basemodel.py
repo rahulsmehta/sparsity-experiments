@@ -74,6 +74,9 @@ class BaseModel(nn.Module):
         for batch_idx, data in enumerate(self.trainloader):
             inputs, labels = data
             inputs, labels = inputs.to(self.device), labels.to(self.device)
+            if 'MNIST' in self.trainloader.dataset.__str__().split('\n')[0]:
+                current_batch_size = inputs.shape[0]
+                inputs = inputs.view(current_batch_size, 32, 32, 1).expand(current_batch_size, -1, -1, 3).contiguous().view(-1, 3, 32, 32)
             
             loss, outputs = self.train_step(epoch, batch_idx, inputs, labels, optimizer)
             if pruner is not None:
@@ -129,6 +132,9 @@ class BaseModel(nn.Module):
         with torch.no_grad():
             for idx, (inputs, labels) in enumerate(self.testloader, 0):
                 inputs, labels = inputs.to(self.device), labels.to(self.device)
+                if 'MNIST' in self.testloader.dataset.__str__().split('\n')[0]:
+                    current_batch_size = inputs.shape[0]
+                    inputs = inputs.view(current_batch_size, 32, 32, 1).expand(current_batch_size, -1, -1, 3).contiguous().view(-1, 3, 32, 32)
                 outputs = self(inputs)
                 # print(outputs.device)
                 predictions = outputs.argmax(dim=1)

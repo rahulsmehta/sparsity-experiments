@@ -1,0 +1,1002 @@
+Lottery Ticket Experiment for <function ResNet18 at 0x7fbf54b969d8> with pruning rate 10.737418240000006 on device cuda:1
+Training base network...
+Starting epoch 1
+[epoch:1,batch:100]: loss(train): 1.028, acc(train): 0.680, loss(val): 0.842, acc(val): 0.687
+[epoch:1,batch:200]: loss(train): 2.236, acc(train): 0.445, loss(val): 1.586, acc(val): 0.331
+[epoch:1,batch:300]: loss(train): 1.343, acc(train): 0.586, loss(val): 1.100, acc(val): 0.582
+[epoch:1,batch:400]: loss(train): 1.085, acc(train): 0.594, loss(val): 0.968, acc(val): 0.642
+Starting epoch 2
+[epoch:2,batch:100]: loss(train): 1.303, acc(train): 0.656, loss(val): 0.941, acc(val): 0.653
+[epoch:2,batch:200]: loss(train): 1.750, acc(train): 0.570, loss(val): 1.267, acc(val): 0.499
+[epoch:2,batch:300]: loss(train): 1.202, acc(train): 0.586, loss(val): 1.059, acc(val): 0.618
+[epoch:2,batch:400]: loss(train): 0.961, acc(train): 0.688, loss(val): 0.853, acc(val): 0.667
+Starting epoch 3
+[epoch:3,batch:100]: loss(train): 0.967, acc(train): 0.703, loss(val): 0.782, acc(val): 0.714
+[epoch:3,batch:200]: loss(train): 0.821, acc(train): 0.742, loss(val): 0.793, acc(val): 0.717
+[epoch:3,batch:300]: loss(train): 0.714, acc(train): 0.734, loss(val): 0.711, acc(val): 0.739
+[epoch:3,batch:400]: loss(train): 0.683, acc(train): 0.742, loss(val): 0.667, acc(val): 0.750
+Starting epoch 4
+[epoch:4,batch:100]: loss(train): 0.673, acc(train): 0.727, loss(val): 0.628, acc(val): 0.765
+[epoch:4,batch:200]: loss(train): 0.668, acc(train): 0.805, loss(val): 0.639, acc(val): 0.765
+[epoch:4,batch:300]: loss(train): 0.650, acc(train): 0.773, loss(val): 0.676, acc(val): 0.743
+[epoch:4,batch:400]: loss(train): 0.603, acc(train): 0.711, loss(val): 0.612, acc(val): 0.773
+Starting epoch 5
+[epoch:5,batch:100]: loss(train): 0.601, acc(train): 0.820, loss(val): 0.581, acc(val): 0.785
+[epoch:5,batch:200]: loss(train): 0.607, acc(train): 0.812, loss(val): 0.594, acc(val): 0.775
+[epoch:5,batch:300]: loss(train): 0.567, acc(train): 0.797, loss(val): 0.611, acc(val): 0.778
+[epoch:5,batch:400]: loss(train): 0.572, acc(train): 0.820, loss(val): 0.593, acc(val): 0.781
+Starting epoch 6
+[epoch:6,batch:100]: loss(train): 0.544, acc(train): 0.883, loss(val): 0.542, acc(val): 0.801
+[epoch:6,batch:200]: loss(train): 0.547, acc(train): 0.727, loss(val): 0.577, acc(val): 0.790
+[epoch:6,batch:300]: loss(train): 0.566, acc(train): 0.898, loss(val): 0.533, acc(val): 0.802
+[epoch:6,batch:400]: loss(train): 0.526, acc(train): 0.836, loss(val): 0.539, acc(val): 0.796
+Starting epoch 7
+[epoch:7,batch:100]: loss(train): 0.509, acc(train): 0.844, loss(val): 0.521, acc(val): 0.806
+[epoch:7,batch:200]: loss(train): 0.517, acc(train): 0.820, loss(val): 0.547, acc(val): 0.798
+[epoch:7,batch:300]: loss(train): 0.510, acc(train): 0.836, loss(val): 0.496, acc(val): 0.814
+[epoch:7,batch:400]: loss(train): 0.482, acc(train): 0.742, loss(val): 0.524, acc(val): 0.803
+Starting epoch 8
+[epoch:8,batch:100]: loss(train): 0.459, acc(train): 0.844, loss(val): 0.487, acc(val): 0.818
+[epoch:8,batch:200]: loss(train): 0.506, acc(train): 0.852, loss(val): 0.517, acc(val): 0.807
+[epoch:8,batch:300]: loss(train): 0.484, acc(train): 0.812, loss(val): 0.475, acc(val): 0.825
+[epoch:8,batch:400]: loss(train): 0.468, acc(train): 0.867, loss(val): 0.469, acc(val): 0.827
+Starting epoch 9
+[epoch:9,batch:100]: loss(train): 0.447, acc(train): 0.789, loss(val): 0.455, acc(val): 0.832
+[epoch:9,batch:200]: loss(train): 0.474, acc(train): 0.844, loss(val): 0.485, acc(val): 0.826
+[epoch:9,batch:300]: loss(train): 0.462, acc(train): 0.789, loss(val): 0.454, acc(val): 0.835
+[epoch:9,batch:400]: loss(train): 0.458, acc(train): 0.867, loss(val): 0.510, acc(val): 0.813
+Starting epoch 10
+[epoch:10,batch:100]: loss(train): 0.440, acc(train): 0.820, loss(val): 0.432, acc(val): 0.843
+[epoch:10,batch:200]: loss(train): 0.451, acc(train): 0.805, loss(val): 0.481, acc(val): 0.823
+[epoch:10,batch:300]: loss(train): 0.439, acc(train): 0.875, loss(val): 0.472, acc(val): 0.829
+[epoch:10,batch:400]: loss(train): 0.433, acc(train): 0.906, loss(val): 0.477, acc(val): 0.820
+Starting epoch 11
+[epoch:11,batch:100]: loss(train): 0.434, acc(train): 0.883, loss(val): 0.427, acc(val): 0.841
+[epoch:11,batch:200]: loss(train): 0.433, acc(train): 0.852, loss(val): 0.470, acc(val): 0.827
+[epoch:11,batch:300]: loss(train): 0.424, acc(train): 0.836, loss(val): 0.495, acc(val): 0.816
+[epoch:11,batch:400]: loss(train): 0.438, acc(train): 0.859, loss(val): 0.438, acc(val): 0.840
+Starting epoch 12
+[epoch:12,batch:100]: loss(train): 0.411, acc(train): 0.844, loss(val): 0.415, acc(val): 0.848
+[epoch:12,batch:200]: loss(train): 0.415, acc(train): 0.852, loss(val): 0.438, acc(val): 0.835
+[epoch:12,batch:300]: loss(train): 0.429, acc(train): 0.883, loss(val): 0.442, acc(val): 0.838
+[epoch:12,batch:400]: loss(train): 0.419, acc(train): 0.859, loss(val): 0.454, acc(val): 0.836
+Starting epoch 13
+[epoch:13,batch:100]: loss(train): 0.401, acc(train): 0.820, loss(val): 0.408, acc(val): 0.852
+[epoch:13,batch:200]: loss(train): 0.435, acc(train): 0.859, loss(val): 0.448, acc(val): 0.835
+[epoch:13,batch:300]: loss(train): 0.409, acc(train): 0.836, loss(val): 0.414, acc(val): 0.850
+[epoch:13,batch:400]: loss(train): 0.407, acc(train): 0.820, loss(val): 0.434, acc(val): 0.844
+Starting epoch 14
+[epoch:14,batch:100]: loss(train): 0.396, acc(train): 0.828, loss(val): 0.401, acc(val): 0.854
+[epoch:14,batch:200]: loss(train): 0.408, acc(train): 0.852, loss(val): 0.418, acc(val): 0.847
+[epoch:14,batch:300]: loss(train): 0.407, acc(train): 0.883, loss(val): 0.440, acc(val): 0.838
+[epoch:14,batch:400]: loss(train): 0.407, acc(train): 0.820, loss(val): 0.432, acc(val): 0.841
+Starting epoch 15
+[epoch:15,batch:100]: loss(train): 0.384, acc(train): 0.812, loss(val): 0.398, acc(val): 0.853
+[epoch:15,batch:200]: loss(train): 0.390, acc(train): 0.898, loss(val): 0.413, acc(val): 0.851
+[epoch:15,batch:300]: loss(train): 0.392, acc(train): 0.812, loss(val): 0.409, acc(val): 0.847
+[epoch:15,batch:400]: loss(train): 0.406, acc(train): 0.891, loss(val): 0.465, acc(val): 0.829
+Starting epoch 16
+[epoch:16,batch:100]: loss(train): 0.380, acc(train): 0.820, loss(val): 0.389, acc(val): 0.860
+[epoch:16,batch:200]: loss(train): 0.385, acc(train): 0.867, loss(val): 0.420, acc(val): 0.848
+[epoch:16,batch:300]: loss(train): 0.394, acc(train): 0.852, loss(val): 0.412, acc(val): 0.850
+[epoch:16,batch:400]: loss(train): 0.392, acc(train): 0.883, loss(val): 0.386, acc(val): 0.860
+Starting epoch 17
+[epoch:17,batch:100]: loss(train): 0.371, acc(train): 0.781, loss(val): 0.380, acc(val): 0.859
+[epoch:17,batch:200]: loss(train): 0.388, acc(train): 0.828, loss(val): 0.410, acc(val): 0.853
+[epoch:17,batch:300]: loss(train): 0.384, acc(train): 0.797, loss(val): 0.417, acc(val): 0.846
+[epoch:17,batch:400]: loss(train): 0.377, acc(train): 0.898, loss(val): 0.399, acc(val): 0.851
+Starting epoch 18
+[epoch:18,batch:100]: loss(train): 0.367, acc(train): 0.844, loss(val): 0.376, acc(val): 0.862
+[epoch:18,batch:200]: loss(train): 0.381, acc(train): 0.852, loss(val): 0.422, acc(val): 0.845
+[epoch:18,batch:300]: loss(train): 0.387, acc(train): 0.867, loss(val): 0.384, acc(val): 0.859
+[epoch:18,batch:400]: loss(train): 0.375, acc(train): 0.875, loss(val): 0.395, acc(val): 0.853
+Starting epoch 19
+[epoch:19,batch:100]: loss(train): 0.356, acc(train): 0.797, loss(val): 0.379, acc(val): 0.858
+[epoch:19,batch:200]: loss(train): 0.379, acc(train): 0.883, loss(val): 0.434, acc(val): 0.844
+[epoch:19,batch:300]: loss(train): 0.370, acc(train): 0.844, loss(val): 0.399, acc(val): 0.852
+[epoch:19,batch:400]: loss(train): 0.368, acc(train): 0.789, loss(val): 0.403, acc(val): 0.856
+Starting epoch 20
+[epoch:20,batch:100]: loss(train): 0.362, acc(train): 0.867, loss(val): 0.380, acc(val): 0.858
+[epoch:20,batch:200]: loss(train): 0.369, acc(train): 0.867, loss(val): 0.392, acc(val): 0.851
+[epoch:20,batch:300]: loss(train): 0.355, acc(train): 0.812, loss(val): 0.393, acc(val): 0.856
+[epoch:20,batch:400]: loss(train): 0.373, acc(train): 0.867, loss(val): 0.392, acc(val): 0.857
+Starting epoch 21
+[epoch:21,batch:100]: loss(train): 0.348, acc(train): 0.789, loss(val): 0.365, acc(val): 0.862
+[epoch:21,batch:200]: loss(train): 0.360, acc(train): 0.836, loss(val): 0.417, acc(val): 0.839
+[epoch:21,batch:300]: loss(train): 0.370, acc(train): 0.859, loss(val): 0.418, acc(val): 0.846
+[epoch:21,batch:400]: loss(train): 0.362, acc(train): 0.898, loss(val): 0.386, acc(val): 0.861
+Starting epoch 22
+[epoch:22,batch:100]: loss(train): 0.347, acc(train): 0.859, loss(val): 0.364, acc(val): 0.865
+[epoch:22,batch:200]: loss(train): 0.367, acc(train): 0.844, loss(val): 0.417, acc(val): 0.851
+[epoch:22,batch:300]: loss(train): 0.357, acc(train): 0.852, loss(val): 0.387, acc(val): 0.860
+[epoch:22,batch:400]: loss(train): 0.360, acc(train): 0.891, loss(val): 0.387, acc(val): 0.855
+Starting epoch 23
+[epoch:23,batch:100]: loss(train): 0.343, acc(train): 0.891, loss(val): 0.357, acc(val): 0.868
+[epoch:23,batch:200]: loss(train): 0.347, acc(train): 0.906, loss(val): 0.357, acc(val): 0.866
+[epoch:23,batch:300]: loss(train): 0.368, acc(train): 0.852, loss(val): 0.406, acc(val): 0.846
+[epoch:23,batch:400]: loss(train): 0.360, acc(train): 0.891, loss(val): 0.372, acc(val): 0.861
+Starting epoch 24
+[epoch:24,batch:100]: loss(train): 0.341, acc(train): 0.852, loss(val): 0.354, acc(val): 0.867
+[epoch:24,batch:200]: loss(train): 0.351, acc(train): 0.867, loss(val): 0.397, acc(val): 0.855
+[epoch:24,batch:300]: loss(train): 0.349, acc(train): 0.898, loss(val): 0.363, acc(val): 0.866
+[epoch:24,batch:400]: loss(train): 0.352, acc(train): 0.930, loss(val): 0.381, acc(val): 0.857
+Starting epoch 25
+[epoch:25,batch:100]: loss(train): 0.339, acc(train): 0.844, loss(val): 0.354, acc(val): 0.869
+[epoch:25,batch:200]: loss(train): 0.354, acc(train): 0.867, loss(val): 0.378, acc(val): 0.861
+[epoch:25,batch:300]: loss(train): 0.334, acc(train): 0.945, loss(val): 0.375, acc(val): 0.860
+[epoch:25,batch:400]: loss(train): 0.351, acc(train): 0.875, loss(val): 0.379, acc(val): 0.860
+Starting epoch 26
+[epoch:26,batch:100]: loss(train): 0.323, acc(train): 0.867, loss(val): 0.354, acc(val): 0.868
+[epoch:26,batch:200]: loss(train): 0.340, acc(train): 0.867, loss(val): 0.370, acc(val): 0.860
+[epoch:26,batch:300]: loss(train): 0.345, acc(train): 0.883, loss(val): 0.365, acc(val): 0.868
+[epoch:26,batch:400]: loss(train): 0.353, acc(train): 0.875, loss(val): 0.375, acc(val): 0.860
+Starting epoch 27
+[epoch:27,batch:100]: loss(train): 0.327, acc(train): 0.922, loss(val): 0.347, acc(val): 0.870
+[epoch:27,batch:200]: loss(train): 0.327, acc(train): 0.852, loss(val): 0.377, acc(val): 0.861
+[epoch:27,batch:300]: loss(train): 0.343, acc(train): 0.906, loss(val): 0.383, acc(val): 0.860
+[epoch:27,batch:400]: loss(train): 0.345, acc(train): 0.898, loss(val): 0.378, acc(val): 0.859
+Starting epoch 28
+[epoch:28,batch:100]: loss(train): 0.329, acc(train): 0.844, loss(val): 0.344, acc(val): 0.874
+[epoch:28,batch:200]: loss(train): 0.342, acc(train): 0.844, loss(val): 0.382, acc(val): 0.855
+[epoch:28,batch:300]: loss(train): 0.324, acc(train): 0.891, loss(val): 0.344, acc(val): 0.873
+[epoch:28,batch:400]: loss(train): 0.339, acc(train): 0.898, loss(val): 0.395, acc(val): 0.853
+Starting epoch 29
+[epoch:29,batch:100]: loss(train): 0.317, acc(train): 0.891, loss(val): 0.346, acc(val): 0.870
+[epoch:29,batch:200]: loss(train): 0.330, acc(train): 0.844, loss(val): 0.367, acc(val): 0.866
+[epoch:29,batch:300]: loss(train): 0.332, acc(train): 0.898, loss(val): 0.362, acc(val): 0.866
+[epoch:29,batch:400]: loss(train): 0.333, acc(train): 0.859, loss(val): 0.367, acc(val): 0.864
+Starting epoch 30
+[epoch:30,batch:100]: loss(train): 0.316, acc(train): 0.898, loss(val): 0.338, acc(val): 0.874
+[epoch:30,batch:200]: loss(train): 0.325, acc(train): 0.906, loss(val): 0.359, acc(val): 0.868
+[epoch:30,batch:300]: loss(train): 0.338, acc(train): 0.836, loss(val): 0.382, acc(val): 0.860
+[epoch:30,batch:400]: loss(train): 0.320, acc(train): 0.852, loss(val): 0.352, acc(val): 0.870
+Starting epoch 31
+[epoch:31,batch:100]: loss(train): 0.318, acc(train): 0.898, loss(val): 0.344, acc(val): 0.871
+[epoch:31,batch:200]: loss(train): 0.322, acc(train): 0.906, loss(val): 0.370, acc(val): 0.862
+[epoch:31,batch:300]: loss(train): 0.321, acc(train): 0.930, loss(val): 0.378, acc(val): 0.864
+[epoch:31,batch:400]: loss(train): 0.337, acc(train): 0.867, loss(val): 0.379, acc(val): 0.861
+Starting epoch 32
+[epoch:32,batch:100]: loss(train): 0.320, acc(train): 0.836, loss(val): 0.335, acc(val): 0.876
+[epoch:32,batch:200]: loss(train): 0.325, acc(train): 0.883, loss(val): 0.351, acc(val): 0.869
+[epoch:32,batch:300]: loss(train): 0.327, acc(train): 0.828, loss(val): 0.356, acc(val): 0.872
+[epoch:32,batch:400]: loss(train): 0.320, acc(train): 0.922, loss(val): 0.362, acc(val): 0.865
+Starting epoch 33
+[epoch:33,batch:100]: loss(train): 0.302, acc(train): 0.906, loss(val): 0.335, acc(val): 0.874
+[epoch:33,batch:200]: loss(train): 0.328, acc(train): 0.883, loss(val): 0.376, acc(val): 0.857
+[epoch:33,batch:300]: loss(train): 0.327, acc(train): 0.820, loss(val): 0.367, acc(val): 0.865
+[epoch:33,batch:400]: loss(train): 0.326, acc(train): 0.859, loss(val): 0.344, acc(val): 0.876
+Starting epoch 34
+[epoch:34,batch:100]: loss(train): 0.310, acc(train): 0.836, loss(val): 0.334, acc(val): 0.879
+[epoch:34,batch:200]: loss(train): 0.322, acc(train): 0.891, loss(val): 0.360, acc(val): 0.865
+[epoch:34,batch:300]: loss(train): 0.320, acc(train): 0.914, loss(val): 0.354, acc(val): 0.872
+[epoch:34,batch:400]: loss(train): 0.319, acc(train): 0.867, loss(val): 0.351, acc(val): 0.872
+Starting epoch 35
+[epoch:35,batch:100]: loss(train): 0.297, acc(train): 0.898, loss(val): 0.335, acc(val): 0.877
+[epoch:35,batch:200]: loss(train): 0.320, acc(train): 0.883, loss(val): 0.363, acc(val): 0.865
+[epoch:35,batch:300]: loss(train): 0.318, acc(train): 0.906, loss(val): 0.350, acc(val): 0.869
+[epoch:35,batch:400]: loss(train): 0.316, acc(train): 0.859, loss(val): 0.342, acc(val): 0.872
+Starting epoch 36
+[epoch:36,batch:100]: loss(train): 0.302, acc(train): 0.867, loss(val): 0.328, acc(val): 0.876
+[epoch:36,batch:200]: loss(train): 0.316, acc(train): 0.914, loss(val): 0.349, acc(val): 0.871
+[epoch:36,batch:300]: loss(train): 0.300, acc(train): 0.828, loss(val): 0.342, acc(val): 0.875
+[epoch:36,batch:400]: loss(train): 0.310, acc(train): 0.898, loss(val): 0.361, acc(val): 0.867
+Starting epoch 37
+[epoch:37,batch:100]: loss(train): 0.312, acc(train): 0.922, loss(val): 0.326, acc(val): 0.879
+[epoch:37,batch:200]: loss(train): 0.311, acc(train): 0.891, loss(val): 0.347, acc(val): 0.873
+[epoch:37,batch:300]: loss(train): 0.297, acc(train): 0.836, loss(val): 0.352, acc(val): 0.871
+[epoch:37,batch:400]: loss(train): 0.314, acc(train): 0.883, loss(val): 0.362, acc(val): 0.868
+Starting epoch 38
+[epoch:38,batch:100]: loss(train): 0.291, acc(train): 0.938, loss(val): 0.324, acc(val): 0.881
+[epoch:38,batch:200]: loss(train): 0.311, acc(train): 0.898, loss(val): 0.342, acc(val): 0.876
+[epoch:38,batch:300]: loss(train): 0.310, acc(train): 0.906, loss(val): 0.356, acc(val): 0.868
+[epoch:38,batch:400]: loss(train): 0.310, acc(train): 0.898, loss(val): 0.337, acc(val): 0.874
+Starting epoch 39
+[epoch:39,batch:100]: loss(train): 0.296, acc(train): 0.914, loss(val): 0.316, acc(val): 0.883
+[epoch:39,batch:200]: loss(train): 0.316, acc(train): 0.883, loss(val): 0.346, acc(val): 0.871
+[epoch:39,batch:300]: loss(train): 0.300, acc(train): 0.875, loss(val): 0.370, acc(val): 0.863
+[epoch:39,batch:400]: loss(train): 0.311, acc(train): 0.852, loss(val): 0.345, acc(val): 0.874
+Starting epoch 40
+[epoch:40,batch:100]: loss(train): 0.296, acc(train): 0.906, loss(val): 0.319, acc(val): 0.881
+[epoch:40,batch:200]: loss(train): 0.315, acc(train): 0.891, loss(val): 0.338, acc(val): 0.877
+[epoch:40,batch:300]: loss(train): 0.315, acc(train): 0.875, loss(val): 0.335, acc(val): 0.879
+[epoch:40,batch:400]: loss(train): 0.305, acc(train): 0.906, loss(val): 0.334, acc(val): 0.878
+Starting epoch 41
+[epoch:41,batch:100]: loss(train): 0.296, acc(train): 0.875, loss(val): 0.321, acc(val): 0.884
+[epoch:41,batch:200]: loss(train): 0.304, acc(train): 0.922, loss(val): 0.353, acc(val): 0.869
+[epoch:41,batch:300]: loss(train): 0.298, acc(train): 0.977, loss(val): 0.345, acc(val): 0.873
+[epoch:41,batch:400]: loss(train): 0.304, acc(train): 0.875, loss(val): 0.335, acc(val): 0.876
+Starting epoch 42
+[epoch:42,batch:100]: loss(train): 0.288, acc(train): 0.898, loss(val): 0.320, acc(val): 0.883
+[epoch:42,batch:200]: loss(train): 0.303, acc(train): 0.906, loss(val): 0.342, acc(val): 0.875
+[epoch:42,batch:300]: loss(train): 0.303, acc(train): 0.898, loss(val): 0.340, acc(val): 0.874
+[epoch:42,batch:400]: loss(train): 0.309, acc(train): 0.875, loss(val): 0.342, acc(val): 0.876
+Starting epoch 43
+[epoch:43,batch:100]: loss(train): 0.281, acc(train): 0.875, loss(val): 0.310, acc(val): 0.886
+[epoch:43,batch:200]: loss(train): 0.298, acc(train): 0.883, loss(val): 0.332, acc(val): 0.879
+[epoch:43,batch:300]: loss(train): 0.309, acc(train): 0.883, loss(val): 0.360, acc(val): 0.870
+[epoch:43,batch:400]: loss(train): 0.302, acc(train): 0.820, loss(val): 0.347, acc(val): 0.869
+Starting epoch 44
+[epoch:44,batch:100]: loss(train): 0.288, acc(train): 0.914, loss(val): 0.322, acc(val): 0.880
+[epoch:44,batch:200]: loss(train): 0.289, acc(train): 0.875, loss(val): 0.349, acc(val): 0.869
+[epoch:44,batch:300]: loss(train): 0.286, acc(train): 0.891, loss(val): 0.334, acc(val): 0.877
+[epoch:44,batch:400]: loss(train): 0.317, acc(train): 0.859, loss(val): 0.342, acc(val): 0.875
+Starting epoch 45
+[epoch:45,batch:100]: loss(train): 0.273, acc(train): 0.898, loss(val): 0.311, acc(val): 0.884
+[epoch:45,batch:200]: loss(train): 0.293, acc(train): 0.945, loss(val): 0.330, acc(val): 0.879
+[epoch:45,batch:300]: loss(train): 0.313, acc(train): 0.883, loss(val): 0.341, acc(val): 0.875
+[epoch:45,batch:400]: loss(train): 0.305, acc(train): 0.914, loss(val): 0.332, acc(val): 0.878
+Starting epoch 46
+[epoch:46,batch:100]: loss(train): 0.285, acc(train): 0.891, loss(val): 0.315, acc(val): 0.884
+[epoch:46,batch:200]: loss(train): 0.288, acc(train): 0.898, loss(val): 0.349, acc(val): 0.872
+[epoch:46,batch:300]: loss(train): 0.303, acc(train): 0.875, loss(val): 0.351, acc(val): 0.869
+[epoch:46,batch:400]: loss(train): 0.293, acc(train): 0.914, loss(val): 0.340, acc(val): 0.878
+Starting epoch 47
+[epoch:47,batch:100]: loss(train): 0.287, acc(train): 0.906, loss(val): 0.313, acc(val): 0.886
+[epoch:47,batch:200]: loss(train): 0.286, acc(train): 0.875, loss(val): 0.327, acc(val): 0.881
+[epoch:47,batch:300]: loss(train): 0.307, acc(train): 0.914, loss(val): 0.317, acc(val): 0.883
+[epoch:47,batch:400]: loss(train): 0.291, acc(train): 0.898, loss(val): 0.315, acc(val): 0.885
+Starting epoch 48
+[epoch:48,batch:100]: loss(train): 0.278, acc(train): 0.875, loss(val): 0.315, acc(val): 0.884
+[epoch:48,batch:200]: loss(train): 0.292, acc(train): 0.859, loss(val): 0.317, acc(val): 0.883
+[epoch:48,batch:300]: loss(train): 0.284, acc(train): 0.914, loss(val): 0.338, acc(val): 0.875
+[epoch:48,batch:400]: loss(train): 0.288, acc(train): 0.883, loss(val): 0.355, acc(val): 0.873
+Starting epoch 49
+[epoch:49,batch:100]: loss(train): 0.272, acc(train): 0.875, loss(val): 0.314, acc(val): 0.884
+[epoch:49,batch:200]: loss(train): 0.283, acc(train): 0.945, loss(val): 0.336, acc(val): 0.881
+[epoch:49,batch:300]: loss(train): 0.282, acc(train): 0.914, loss(val): 0.329, acc(val): 0.878
+[epoch:49,batch:400]: loss(train): 0.299, acc(train): 0.891, loss(val): 0.323, acc(val): 0.882
+Starting epoch 50
+[epoch:50,batch:100]: loss(train): 0.272, acc(train): 0.906, loss(val): 0.305, acc(val): 0.889
+[epoch:50,batch:200]: loss(train): 0.288, acc(train): 0.938, loss(val): 0.332, acc(val): 0.877
+[epoch:50,batch:300]: loss(train): 0.289, acc(train): 0.898, loss(val): 0.348, acc(val): 0.872
+[epoch:50,batch:400]: loss(train): 0.298, acc(train): 0.898, loss(val): 0.325, acc(val): 0.882
+Starting epoch 51
+[epoch:51,batch:100]: loss(train): 0.274, acc(train): 0.938, loss(val): 0.302, acc(val): 0.889
+[epoch:51,batch:200]: loss(train): 0.278, acc(train): 0.945, loss(val): 0.346, acc(val): 0.872
+[epoch:51,batch:300]: loss(train): 0.291, acc(train): 0.883, loss(val): 0.327, acc(val): 0.879
+[epoch:51,batch:400]: loss(train): 0.295, acc(train): 0.891, loss(val): 0.321, acc(val): 0.883
+Starting epoch 52
+[epoch:52,batch:100]: loss(train): 0.264, acc(train): 0.898, loss(val): 0.312, acc(val): 0.885
+[epoch:52,batch:200]: loss(train): 0.288, acc(train): 0.875, loss(val): 0.320, acc(val): 0.884
+[epoch:52,batch:300]: loss(train): 0.280, acc(train): 0.961, loss(val): 0.350, acc(val): 0.872
+[epoch:52,batch:400]: loss(train): 0.280, acc(train): 0.875, loss(val): 0.334, acc(val): 0.876
+Starting epoch 53
+[epoch:53,batch:100]: loss(train): 0.265, acc(train): 0.914, loss(val): 0.303, acc(val): 0.890
+[epoch:53,batch:200]: loss(train): 0.276, acc(train): 0.844, loss(val): 0.328, acc(val): 0.881
+[epoch:53,batch:300]: loss(train): 0.285, acc(train): 0.883, loss(val): 0.328, acc(val): 0.876
+[epoch:53,batch:400]: loss(train): 0.280, acc(train): 0.930, loss(val): 0.319, acc(val): 0.886
+Starting epoch 54
+[epoch:54,batch:100]: loss(train): 0.269, acc(train): 0.891, loss(val): 0.310, acc(val): 0.885
+[epoch:54,batch:200]: loss(train): 0.273, acc(train): 0.898, loss(val): 0.332, acc(val): 0.882
+[epoch:54,batch:300]: loss(train): 0.282, acc(train): 0.883, loss(val): 0.311, acc(val): 0.889
+[epoch:54,batch:400]: loss(train): 0.282, acc(train): 0.883, loss(val): 0.319, acc(val): 0.882
+Starting epoch 55
+[epoch:55,batch:100]: loss(train): 0.274, acc(train): 0.906, loss(val): 0.304, acc(val): 0.888
+[epoch:55,batch:200]: loss(train): 0.279, acc(train): 0.883, loss(val): 0.308, acc(val): 0.888
+[epoch:55,batch:300]: loss(train): 0.269, acc(train): 0.906, loss(val): 0.329, acc(val): 0.882
+[epoch:55,batch:400]: loss(train): 0.280, acc(train): 0.859, loss(val): 0.311, acc(val): 0.888
+Starting epoch 56
+[epoch:56,batch:100]: loss(train): 0.271, acc(train): 0.930, loss(val): 0.303, acc(val): 0.891
+[epoch:56,batch:200]: loss(train): 0.267, acc(train): 0.914, loss(val): 0.335, acc(val): 0.877
+[epoch:56,batch:300]: loss(train): 0.277, acc(train): 0.914, loss(val): 0.309, acc(val): 0.888
+[epoch:56,batch:400]: loss(train): 0.265, acc(train): 0.906, loss(val): 0.313, acc(val): 0.885
+Starting epoch 57
+[epoch:57,batch:100]: loss(train): 0.254, acc(train): 0.930, loss(val): 0.305, acc(val): 0.889
+[epoch:57,batch:200]: loss(train): 0.277, acc(train): 0.852, loss(val): 0.321, acc(val): 0.883
+[epoch:57,batch:300]: loss(train): 0.276, acc(train): 0.930, loss(val): 0.323, acc(val): 0.883
+[epoch:57,batch:400]: loss(train): 0.277, acc(train): 0.891, loss(val): 0.326, acc(val): 0.880
+Starting epoch 58
+[epoch:58,batch:100]: loss(train): 0.257, acc(train): 0.891, loss(val): 0.299, acc(val): 0.891
+[epoch:58,batch:200]: loss(train): 0.276, acc(train): 0.906, loss(val): 0.312, acc(val): 0.885
+[epoch:58,batch:300]: loss(train): 0.277, acc(train): 0.930, loss(val): 0.305, acc(val): 0.890
+[epoch:58,batch:400]: loss(train): 0.269, acc(train): 0.891, loss(val): 0.302, acc(val): 0.892
+Starting epoch 59
+[epoch:59,batch:100]: loss(train): 0.264, acc(train): 0.953, loss(val): 0.293, acc(val): 0.892
+[epoch:59,batch:200]: loss(train): 0.270, acc(train): 0.844, loss(val): 0.312, acc(val): 0.887
+[epoch:59,batch:300]: loss(train): 0.279, acc(train): 0.922, loss(val): 0.306, acc(val): 0.889
+[epoch:59,batch:400]: loss(train): 0.263, acc(train): 0.875, loss(val): 0.320, acc(val): 0.884
+Starting epoch 60
+[epoch:60,batch:100]: loss(train): 0.260, acc(train): 0.914, loss(val): 0.299, acc(val): 0.891
+[epoch:60,batch:200]: loss(train): 0.269, acc(train): 0.836, loss(val): 0.325, acc(val): 0.880
+[epoch:60,batch:300]: loss(train): 0.273, acc(train): 0.898, loss(val): 0.312, acc(val): 0.887
+[epoch:60,batch:400]: loss(train): 0.273, acc(train): 0.898, loss(val): 0.334, acc(val): 0.880
+Starting epoch 61
+[epoch:61,batch:100]: loss(train): 0.263, acc(train): 0.875, loss(val): 0.290, acc(val): 0.894
+[epoch:61,batch:200]: loss(train): 0.255, acc(train): 0.945, loss(val): 0.317, acc(val): 0.887
+[epoch:61,batch:300]: loss(train): 0.279, acc(train): 0.844, loss(val): 0.308, acc(val): 0.885
+[epoch:61,batch:400]: loss(train): 0.268, acc(train): 0.906, loss(val): 0.318, acc(val): 0.887
+Starting epoch 62
+[epoch:62,batch:100]: loss(train): 0.254, acc(train): 0.961, loss(val): 0.295, acc(val): 0.898
+[epoch:62,batch:200]: loss(train): 0.266, acc(train): 0.906, loss(val): 0.307, acc(val): 0.888
+[epoch:62,batch:300]: loss(train): 0.270, acc(train): 0.898, loss(val): 0.303, acc(val): 0.888
+[epoch:62,batch:400]: loss(train): 0.264, acc(train): 0.852, loss(val): 0.321, acc(val): 0.887
+Starting epoch 63
+[epoch:63,batch:100]: loss(train): 0.250, acc(train): 0.922, loss(val): 0.295, acc(val): 0.894
+[epoch:63,batch:200]: loss(train): 0.266, acc(train): 0.883, loss(val): 0.304, acc(val): 0.889
+[epoch:63,batch:300]: loss(train): 0.262, acc(train): 0.945, loss(val): 0.310, acc(val): 0.889
+[epoch:63,batch:400]: loss(train): 0.275, acc(train): 0.914, loss(val): 0.317, acc(val): 0.885
+Starting epoch 64
+[epoch:64,batch:100]: loss(train): 0.258, acc(train): 0.914, loss(val): 0.299, acc(val): 0.890
+[epoch:64,batch:200]: loss(train): 0.263, acc(train): 0.938, loss(val): 0.320, acc(val): 0.885
+[epoch:64,batch:300]: loss(train): 0.264, acc(train): 0.930, loss(val): 0.311, acc(val): 0.887
+[epoch:64,batch:400]: loss(train): 0.270, acc(train): 0.883, loss(val): 0.307, acc(val): 0.889
+Starting epoch 65
+[epoch:65,batch:100]: loss(train): 0.252, acc(train): 0.922, loss(val): 0.288, acc(val): 0.895
+[epoch:65,batch:200]: loss(train): 0.259, acc(train): 0.945, loss(val): 0.308, acc(val): 0.889
+[epoch:65,batch:300]: loss(train): 0.261, acc(train): 0.891, loss(val): 0.313, acc(val): 0.886
+[epoch:65,batch:400]: loss(train): 0.271, acc(train): 0.883, loss(val): 0.303, acc(val): 0.890
+Starting epoch 66
+[epoch:66,batch:100]: loss(train): 0.249, acc(train): 0.906, loss(val): 0.287, acc(val): 0.895
+[epoch:66,batch:200]: loss(train): 0.240, acc(train): 0.875, loss(val): 0.328, acc(val): 0.881
+[epoch:66,batch:300]: loss(train): 0.272, acc(train): 0.867, loss(val): 0.322, acc(val): 0.884
+[epoch:66,batch:400]: loss(train): 0.269, acc(train): 0.875, loss(val): 0.322, acc(val): 0.882
+Starting epoch 67
+[epoch:67,batch:100]: loss(train): 0.251, acc(train): 0.883, loss(val): 0.290, acc(val): 0.892
+[epoch:67,batch:200]: loss(train): 0.262, acc(train): 0.898, loss(val): 0.308, acc(val): 0.890
+[epoch:67,batch:300]: loss(train): 0.254, acc(train): 0.906, loss(val): 0.302, acc(val): 0.889
+[epoch:67,batch:400]: loss(train): 0.256, acc(train): 0.922, loss(val): 0.301, acc(val): 0.887
+Starting epoch 68
+[epoch:68,batch:100]: loss(train): 0.245, acc(train): 0.906, loss(val): 0.291, acc(val): 0.897
+[epoch:68,batch:200]: loss(train): 0.259, acc(train): 0.938, loss(val): 0.298, acc(val): 0.893
+[epoch:68,batch:300]: loss(train): 0.253, acc(train): 0.906, loss(val): 0.312, acc(val): 0.885
+[epoch:68,batch:400]: loss(train): 0.251, acc(train): 0.922, loss(val): 0.316, acc(val): 0.886
+Starting epoch 69
+[epoch:69,batch:100]: loss(train): 0.236, acc(train): 0.883, loss(val): 0.292, acc(val): 0.892
+[epoch:69,batch:200]: loss(train): 0.256, acc(train): 0.875, loss(val): 0.299, acc(val): 0.890
+[epoch:69,batch:300]: loss(train): 0.257, acc(train): 0.898, loss(val): 0.291, acc(val): 0.895
+[epoch:69,batch:400]: loss(train): 0.266, acc(train): 0.906, loss(val): 0.332, acc(val): 0.881
+Starting epoch 70
+[epoch:70,batch:100]: loss(train): 0.241, acc(train): 0.891, loss(val): 0.284, acc(val): 0.896
+[epoch:70,batch:200]: loss(train): 0.246, acc(train): 0.836, loss(val): 0.321, acc(val): 0.883
+[epoch:70,batch:300]: loss(train): 0.263, acc(train): 0.875, loss(val): 0.300, acc(val): 0.894
+[epoch:70,batch:400]: loss(train): 0.251, acc(train): 0.891, loss(val): 0.318, acc(val): 0.885
+Starting epoch 71
+[epoch:71,batch:100]: loss(train): 0.241, acc(train): 0.898, loss(val): 0.276, acc(val): 0.900
+[epoch:71,batch:200]: loss(train): 0.231, acc(train): 0.906, loss(val): 0.295, acc(val): 0.892
+[epoch:71,batch:300]: loss(train): 0.250, acc(train): 0.891, loss(val): 0.309, acc(val): 0.884
+[epoch:71,batch:400]: loss(train): 0.272, acc(train): 0.922, loss(val): 0.321, acc(val): 0.886
+Starting epoch 72
+[epoch:72,batch:100]: loss(train): 0.243, acc(train): 0.938, loss(val): 0.282, acc(val): 0.899
+[epoch:72,batch:200]: loss(train): 0.245, acc(train): 0.891, loss(val): 0.303, acc(val): 0.889
+[epoch:72,batch:300]: loss(train): 0.262, acc(train): 0.883, loss(val): 0.321, acc(val): 0.881
+[epoch:72,batch:400]: loss(train): 0.252, acc(train): 0.883, loss(val): 0.305, acc(val): 0.889
+Starting epoch 73
+[epoch:73,batch:100]: loss(train): 0.234, acc(train): 0.898, loss(val): 0.280, acc(val): 0.899
+[epoch:73,batch:200]: loss(train): 0.245, acc(train): 0.898, loss(val): 0.292, acc(val): 0.894
+[epoch:73,batch:300]: loss(train): 0.253, acc(train): 0.938, loss(val): 0.300, acc(val): 0.893
+[epoch:73,batch:400]: loss(train): 0.259, acc(train): 0.906, loss(val): 0.307, acc(val): 0.891
+Starting epoch 74
+[epoch:74,batch:100]: loss(train): 0.240, acc(train): 0.867, loss(val): 0.287, acc(val): 0.896
+[epoch:74,batch:200]: loss(train): 0.247, acc(train): 0.906, loss(val): 0.295, acc(val): 0.894
+[epoch:74,batch:300]: loss(train): 0.260, acc(train): 0.953, loss(val): 0.317, acc(val): 0.883
+[epoch:74,batch:400]: loss(train): 0.263, acc(train): 0.898, loss(val): 0.297, acc(val): 0.892
+Starting epoch 75
+[epoch:75,batch:100]: loss(train): 0.240, acc(train): 0.945, loss(val): 0.296, acc(val): 0.891
+[epoch:75,batch:200]: loss(train): 0.248, acc(train): 0.891, loss(val): 0.314, acc(val): 0.884
+[epoch:75,batch:300]: loss(train): 0.250, acc(train): 0.875, loss(val): 0.303, acc(val): 0.889
+[epoch:75,batch:400]: loss(train): 0.250, acc(train): 0.945, loss(val): 0.311, acc(val): 0.887
+Starting epoch 76
+[epoch:76,batch:100]: loss(train): 0.231, acc(train): 0.859, loss(val): 0.284, acc(val): 0.900
+[epoch:76,batch:200]: loss(train): 0.253, acc(train): 0.930, loss(val): 0.315, acc(val): 0.889
+[epoch:76,batch:300]: loss(train): 0.243, acc(train): 0.922, loss(val): 0.298, acc(val): 0.894
+[epoch:76,batch:400]: loss(train): 0.247, acc(train): 0.867, loss(val): 0.302, acc(val): 0.889
+Starting epoch 77
+[epoch:77,batch:100]: loss(train): 0.226, acc(train): 0.906, loss(val): 0.283, acc(val): 0.900
+[epoch:77,batch:200]: loss(train): 0.238, acc(train): 0.922, loss(val): 0.298, acc(val): 0.894
+[epoch:77,batch:300]: loss(train): 0.254, acc(train): 0.898, loss(val): 0.293, acc(val): 0.895
+[epoch:77,batch:400]: loss(train): 0.246, acc(train): 0.922, loss(val): 0.289, acc(val): 0.894
+Starting epoch 78
+[epoch:78,batch:100]: loss(train): 0.237, acc(train): 0.875, loss(val): 0.276, acc(val): 0.900
+[epoch:78,batch:200]: loss(train): 0.247, acc(train): 0.945, loss(val): 0.288, acc(val): 0.897
+[epoch:78,batch:300]: loss(train): 0.234, acc(train): 0.891, loss(val): 0.302, acc(val): 0.892
+[epoch:78,batch:400]: loss(train): 0.246, acc(train): 0.922, loss(val): 0.310, acc(val): 0.884
+Starting epoch 79
+[epoch:79,batch:100]: loss(train): 0.229, acc(train): 0.961, loss(val): 0.280, acc(val): 0.899
+[epoch:79,batch:200]: loss(train): 0.235, acc(train): 0.930, loss(val): 0.301, acc(val): 0.890
+[epoch:79,batch:300]: loss(train): 0.245, acc(train): 0.906, loss(val): 0.292, acc(val): 0.894
+[epoch:79,batch:400]: loss(train): 0.240, acc(train): 0.852, loss(val): 0.297, acc(val): 0.889
+Starting epoch 80
+[epoch:80,batch:100]: loss(train): 0.232, acc(train): 0.906, loss(val): 0.288, acc(val): 0.896
+[epoch:80,batch:200]: loss(train): 0.234, acc(train): 0.875, loss(val): 0.289, acc(val): 0.896
+[epoch:80,batch:300]: loss(train): 0.236, acc(train): 0.906, loss(val): 0.287, acc(val): 0.898
+[epoch:80,batch:400]: loss(train): 0.250, acc(train): 0.938, loss(val): 0.294, acc(val): 0.894
+Starting epoch 81
+[epoch:81,batch:100]: loss(train): 0.234, acc(train): 0.953, loss(val): 0.272, acc(val): 0.902
+[epoch:81,batch:200]: loss(train): 0.232, acc(train): 0.891, loss(val): 0.311, acc(val): 0.890
+[epoch:81,batch:300]: loss(train): 0.243, acc(train): 0.859, loss(val): 0.285, acc(val): 0.899
+[epoch:81,batch:400]: loss(train): 0.252, acc(train): 0.930, loss(val): 0.300, acc(val): 0.892
+Starting epoch 82
+[epoch:82,batch:100]: loss(train): 0.221, acc(train): 0.922, loss(val): 0.273, acc(val): 0.902
+[epoch:82,batch:200]: loss(train): 0.241, acc(train): 0.898, loss(val): 0.308, acc(val): 0.889
+[epoch:82,batch:300]: loss(train): 0.248, acc(train): 0.906, loss(val): 0.312, acc(val): 0.889
+[epoch:82,batch:400]: loss(train): 0.247, acc(train): 0.906, loss(val): 0.289, acc(val): 0.896
+Starting epoch 83
+[epoch:83,batch:100]: loss(train): 0.225, acc(train): 0.906, loss(val): 0.283, acc(val): 0.899
+[epoch:83,batch:200]: loss(train): 0.228, acc(train): 0.906, loss(val): 0.288, acc(val): 0.896
+[epoch:83,batch:300]: loss(train): 0.233, acc(train): 0.836, loss(val): 0.313, acc(val): 0.891
+[epoch:83,batch:400]: loss(train): 0.252, acc(train): 0.859, loss(val): 0.291, acc(val): 0.891
+Starting epoch 84
+[epoch:84,batch:100]: loss(train): 0.228, acc(train): 0.898, loss(val): 0.275, acc(val): 0.898
+[epoch:84,batch:200]: loss(train): 0.239, acc(train): 0.930, loss(val): 0.292, acc(val): 0.892
+[epoch:84,batch:300]: loss(train): 0.240, acc(train): 0.898, loss(val): 0.297, acc(val): 0.893
+[epoch:84,batch:400]: loss(train): 0.234, acc(train): 0.938, loss(val): 0.331, acc(val): 0.884
+Starting epoch 85
+[epoch:85,batch:100]: loss(train): 0.228, acc(train): 0.914, loss(val): 0.279, acc(val): 0.899
+[epoch:85,batch:200]: loss(train): 0.233, acc(train): 0.898, loss(val): 0.299, acc(val): 0.894
+[epoch:85,batch:300]: loss(train): 0.236, acc(train): 0.875, loss(val): 0.284, acc(val): 0.895
+[epoch:85,batch:400]: loss(train): 0.240, acc(train): 0.906, loss(val): 0.299, acc(val): 0.888
+Starting epoch 86
+[epoch:86,batch:100]: loss(train): 0.222, acc(train): 0.891, loss(val): 0.282, acc(val): 0.899
+[epoch:86,batch:200]: loss(train): 0.229, acc(train): 0.891, loss(val): 0.290, acc(val): 0.895
+[epoch:86,batch:300]: loss(train): 0.228, acc(train): 0.922, loss(val): 0.289, acc(val): 0.896
+[epoch:86,batch:400]: loss(train): 0.232, acc(train): 0.938, loss(val): 0.288, acc(val): 0.895
+Starting epoch 87
+[epoch:87,batch:100]: loss(train): 0.215, acc(train): 0.914, loss(val): 0.271, acc(val): 0.903
+[epoch:87,batch:200]: loss(train): 0.220, acc(train): 0.953, loss(val): 0.300, acc(val): 0.893
+[epoch:87,batch:300]: loss(train): 0.245, acc(train): 0.914, loss(val): 0.280, acc(val): 0.901
+[epoch:87,batch:400]: loss(train): 0.238, acc(train): 0.953, loss(val): 0.287, acc(val): 0.897
+Starting epoch 88
+[epoch:88,batch:100]: loss(train): 0.217, acc(train): 0.938, loss(val): 0.275, acc(val): 0.901
+[epoch:88,batch:200]: loss(train): 0.234, acc(train): 0.898, loss(val): 0.287, acc(val): 0.898
+[epoch:88,batch:300]: loss(train): 0.221, acc(train): 0.945, loss(val): 0.299, acc(val): 0.893
+[epoch:88,batch:400]: loss(train): 0.244, acc(train): 0.938, loss(val): 0.301, acc(val): 0.892
+Starting epoch 89
+[epoch:89,batch:100]: loss(train): 0.224, acc(train): 0.906, loss(val): 0.283, acc(val): 0.898
+[epoch:89,batch:200]: loss(train): 0.227, acc(train): 0.969, loss(val): 0.294, acc(val): 0.892
+[epoch:89,batch:300]: loss(train): 0.232, acc(train): 0.891, loss(val): 0.294, acc(val): 0.892
+[epoch:89,batch:400]: loss(train): 0.232, acc(train): 0.930, loss(val): 0.307, acc(val): 0.892
+Starting epoch 90
+[epoch:90,batch:100]: loss(train): 0.221, acc(train): 0.953, loss(val): 0.274, acc(val): 0.903
+[epoch:90,batch:200]: loss(train): 0.232, acc(train): 0.930, loss(val): 0.291, acc(val): 0.895
+[epoch:90,batch:300]: loss(train): 0.228, acc(train): 0.883, loss(val): 0.297, acc(val): 0.893
+[epoch:90,batch:400]: loss(train): 0.225, acc(train): 0.906, loss(val): 0.272, acc(val): 0.901
+Starting epoch 91
+[epoch:91,batch:100]: loss(train): 0.215, acc(train): 0.867, loss(val): 0.268, acc(val): 0.904
+[epoch:91,batch:200]: loss(train): 0.229, acc(train): 0.867, loss(val): 0.299, acc(val): 0.892
+[epoch:91,batch:300]: loss(train): 0.232, acc(train): 0.922, loss(val): 0.289, acc(val): 0.898
+[epoch:91,batch:400]: loss(train): 0.236, acc(train): 0.906, loss(val): 0.285, acc(val): 0.899
+Starting epoch 92
+[epoch:92,batch:100]: loss(train): 0.214, acc(train): 0.914, loss(val): 0.273, acc(val): 0.903
+[epoch:92,batch:200]: loss(train): 0.223, acc(train): 0.922, loss(val): 0.297, acc(val): 0.894
+[epoch:92,batch:300]: loss(train): 0.228, acc(train): 0.922, loss(val): 0.308, acc(val): 0.892
+[epoch:92,batch:400]: loss(train): 0.229, acc(train): 0.906, loss(val): 0.279, acc(val): 0.898
+Starting epoch 93
+[epoch:93,batch:100]: loss(train): 0.214, acc(train): 0.938, loss(val): 0.271, acc(val): 0.900
+[epoch:93,batch:200]: loss(train): 0.224, acc(train): 0.914, loss(val): 0.289, acc(val): 0.897
+[epoch:93,batch:300]: loss(train): 0.229, acc(train): 0.961, loss(val): 0.296, acc(val): 0.898
+[epoch:93,batch:400]: loss(train): 0.226, acc(train): 0.914, loss(val): 0.300, acc(val): 0.892
+Starting epoch 94
+[epoch:94,batch:100]: loss(train): 0.214, acc(train): 0.953, loss(val): 0.269, acc(val): 0.903
+[epoch:94,batch:200]: loss(train): 0.221, acc(train): 0.906, loss(val): 0.292, acc(val): 0.895
+[epoch:94,batch:300]: loss(train): 0.226, acc(train): 0.930, loss(val): 0.288, acc(val): 0.898
+[epoch:94,batch:400]: loss(train): 0.228, acc(train): 0.922, loss(val): 0.281, acc(val): 0.900
+Starting epoch 95
+[epoch:95,batch:100]: loss(train): 0.208, acc(train): 0.953, loss(val): 0.269, acc(val): 0.902
+[epoch:95,batch:200]: loss(train): 0.214, acc(train): 0.898, loss(val): 0.284, acc(val): 0.896
+[epoch:95,batch:300]: loss(train): 0.223, acc(train): 0.898, loss(val): 0.290, acc(val): 0.895
+[epoch:95,batch:400]: loss(train): 0.235, acc(train): 0.961, loss(val): 0.293, acc(val): 0.893
+Starting epoch 96
+[epoch:96,batch:100]: loss(train): 0.212, acc(train): 0.914, loss(val): 0.266, acc(val): 0.900
+[epoch:96,batch:200]: loss(train): 0.227, acc(train): 0.953, loss(val): 0.284, acc(val): 0.898
+[epoch:96,batch:300]: loss(train): 0.220, acc(train): 0.906, loss(val): 0.281, acc(val): 0.900
+[epoch:96,batch:400]: loss(train): 0.219, acc(train): 0.906, loss(val): 0.294, acc(val): 0.894
+Starting epoch 97
+[epoch:97,batch:100]: loss(train): 0.191, acc(train): 0.938, loss(val): 0.269, acc(val): 0.903
+[epoch:97,batch:200]: loss(train): 0.224, acc(train): 0.867, loss(val): 0.279, acc(val): 0.897
+[epoch:97,batch:300]: loss(train): 0.224, acc(train): 0.977, loss(val): 0.297, acc(val): 0.890
+[epoch:97,batch:400]: loss(train): 0.225, acc(train): 0.922, loss(val): 0.282, acc(val): 0.903
+Starting epoch 98
+[epoch:98,batch:100]: loss(train): 0.208, acc(train): 0.922, loss(val): 0.277, acc(val): 0.898
+[epoch:98,batch:200]: loss(train): 0.222, acc(train): 0.930, loss(val): 0.286, acc(val): 0.896
+[epoch:98,batch:300]: loss(train): 0.221, acc(train): 0.867, loss(val): 0.287, acc(val): 0.898
+[epoch:98,batch:400]: loss(train): 0.222, acc(train): 0.938, loss(val): 0.283, acc(val): 0.895
+Starting epoch 99
+[epoch:99,batch:100]: loss(train): 0.201, acc(train): 0.914, loss(val): 0.271, acc(val): 0.902
+[epoch:99,batch:200]: loss(train): 0.217, acc(train): 0.938, loss(val): 0.296, acc(val): 0.894
+[epoch:99,batch:300]: loss(train): 0.221, acc(train): 0.961, loss(val): 0.284, acc(val): 0.897
+[epoch:99,batch:400]: loss(train): 0.218, acc(train): 0.930, loss(val): 0.281, acc(val): 0.899
+Starting epoch 100
+[epoch:100,batch:100]: loss(train): 0.194, acc(train): 0.898, loss(val): 0.257, acc(val): 0.908
+[epoch:100,batch:200]: loss(train): 0.193, acc(train): 0.953, loss(val): 0.257, acc(val): 0.910
+[epoch:100,batch:300]: loss(train): 0.191, acc(train): 0.914, loss(val): 0.258, acc(val): 0.904
+[epoch:100,batch:400]: loss(train): 0.187, acc(train): 0.914, loss(val): 0.265, acc(val): 0.906
+Starting epoch 101
+[epoch:101,batch:100]: loss(train): 0.185, acc(train): 0.906, loss(val): 0.261, acc(val): 0.905
+[epoch:101,batch:200]: loss(train): 0.189, acc(train): 0.945, loss(val): 0.264, acc(val): 0.903
+[epoch:101,batch:300]: loss(train): 0.187, acc(train): 0.914, loss(val): 0.270, acc(val): 0.903
+[epoch:101,batch:400]: loss(train): 0.184, acc(train): 0.914, loss(val): 0.258, acc(val): 0.907
+Starting epoch 102
+[epoch:102,batch:100]: loss(train): 0.195, acc(train): 0.930, loss(val): 0.257, acc(val): 0.908
+[epoch:102,batch:200]: loss(train): 0.182, acc(train): 0.977, loss(val): 0.260, acc(val): 0.909
+[epoch:102,batch:300]: loss(train): 0.187, acc(train): 0.938, loss(val): 0.257, acc(val): 0.908
+[epoch:102,batch:400]: loss(train): 0.186, acc(train): 0.938, loss(val): 0.264, acc(val): 0.905
+Starting epoch 103
+[epoch:103,batch:100]: loss(train): 0.183, acc(train): 0.906, loss(val): 0.260, acc(val): 0.907
+[epoch:103,batch:200]: loss(train): 0.185, acc(train): 0.922, loss(val): 0.261, acc(val): 0.905
+[epoch:103,batch:300]: loss(train): 0.194, acc(train): 0.930, loss(val): 0.258, acc(val): 0.906
+[epoch:103,batch:400]: loss(train): 0.182, acc(train): 0.953, loss(val): 0.265, acc(val): 0.904
+Starting epoch 104
+[epoch:104,batch:100]: loss(train): 0.185, acc(train): 0.906, loss(val): 0.254, acc(val): 0.906
+[epoch:104,batch:200]: loss(train): 0.190, acc(train): 0.977, loss(val): 0.261, acc(val): 0.906
+[epoch:104,batch:300]: loss(train): 0.190, acc(train): 0.922, loss(val): 0.261, acc(val): 0.908
+[epoch:104,batch:400]: loss(train): 0.185, acc(train): 0.961, loss(val): 0.260, acc(val): 0.908
+Starting epoch 105
+[epoch:105,batch:100]: loss(train): 0.195, acc(train): 0.930, loss(val): 0.254, acc(val): 0.909
+[epoch:105,batch:200]: loss(train): 0.183, acc(train): 0.930, loss(val): 0.258, acc(val): 0.909
+[epoch:105,batch:300]: loss(train): 0.180, acc(train): 0.914, loss(val): 0.262, acc(val): 0.907
+[epoch:105,batch:400]: loss(train): 0.179, acc(train): 0.938, loss(val): 0.260, acc(val): 0.909
+Starting epoch 106
+[epoch:106,batch:100]: loss(train): 0.193, acc(train): 0.938, loss(val): 0.255, acc(val): 0.906
+[epoch:106,batch:200]: loss(train): 0.186, acc(train): 0.914, loss(val): 0.262, acc(val): 0.908
+[epoch:106,batch:300]: loss(train): 0.175, acc(train): 0.930, loss(val): 0.260, acc(val): 0.907
+[epoch:106,batch:400]: loss(train): 0.181, acc(train): 0.945, loss(val): 0.259, acc(val): 0.906
+Starting epoch 107
+[epoch:107,batch:100]: loss(train): 0.180, acc(train): 0.914, loss(val): 0.256, acc(val): 0.907
+[epoch:107,batch:200]: loss(train): 0.187, acc(train): 0.906, loss(val): 0.263, acc(val): 0.907
+[epoch:107,batch:300]: loss(train): 0.181, acc(train): 0.930, loss(val): 0.261, acc(val): 0.905
+[epoch:107,batch:400]: loss(train): 0.181, acc(train): 0.953, loss(val): 0.266, acc(val): 0.908
+Starting epoch 108
+[epoch:108,batch:100]: loss(train): 0.180, acc(train): 0.930, loss(val): 0.255, acc(val): 0.908
+[epoch:108,batch:200]: loss(train): 0.189, acc(train): 0.945, loss(val): 0.257, acc(val): 0.908
+[epoch:108,batch:300]: loss(train): 0.179, acc(train): 0.938, loss(val): 0.261, acc(val): 0.906
+[epoch:108,batch:400]: loss(train): 0.184, acc(train): 0.938, loss(val): 0.262, acc(val): 0.906
+Starting epoch 109
+[epoch:109,batch:100]: loss(train): 0.180, acc(train): 0.914, loss(val): 0.256, acc(val): 0.910
+[epoch:109,batch:200]: loss(train): 0.181, acc(train): 0.945, loss(val): 0.256, acc(val): 0.907
+[epoch:109,batch:300]: loss(train): 0.190, acc(train): 0.891, loss(val): 0.260, acc(val): 0.909
+[epoch:109,batch:400]: loss(train): 0.182, acc(train): 0.922, loss(val): 0.259, acc(val): 0.908
+Starting epoch 110
+[epoch:110,batch:100]: loss(train): 0.187, acc(train): 0.914, loss(val): 0.255, acc(val): 0.909
+[epoch:110,batch:200]: loss(train): 0.179, acc(train): 0.922, loss(val): 0.259, acc(val): 0.909
+[epoch:110,batch:300]: loss(train): 0.177, acc(train): 0.930, loss(val): 0.262, acc(val): 0.908
+[epoch:110,batch:400]: loss(train): 0.190, acc(train): 0.914, loss(val): 0.259, acc(val): 0.906
+Starting epoch 111
+[epoch:111,batch:100]: loss(train): 0.188, acc(train): 0.914, loss(val): 0.257, acc(val): 0.908
+[epoch:111,batch:200]: loss(train): 0.180, acc(train): 0.906, loss(val): 0.262, acc(val): 0.908
+[epoch:111,batch:300]: loss(train): 0.185, acc(train): 0.930, loss(val): 0.259, acc(val): 0.908
+[epoch:111,batch:400]: loss(train): 0.180, acc(train): 0.898, loss(val): 0.259, acc(val): 0.909
+Starting epoch 112
+[epoch:112,batch:100]: loss(train): 0.178, acc(train): 0.953, loss(val): 0.254, acc(val): 0.909
+[epoch:112,batch:200]: loss(train): 0.181, acc(train): 0.961, loss(val): 0.258, acc(val): 0.909
+[epoch:112,batch:300]: loss(train): 0.181, acc(train): 0.938, loss(val): 0.265, acc(val): 0.907
+[epoch:112,batch:400]: loss(train): 0.183, acc(train): 0.969, loss(val): 0.259, acc(val): 0.909
+Starting epoch 113
+[epoch:113,batch:100]: loss(train): 0.181, acc(train): 0.961, loss(val): 0.256, acc(val): 0.908
+[epoch:113,batch:200]: loss(train): 0.180, acc(train): 0.961, loss(val): 0.262, acc(val): 0.906
+[epoch:113,batch:300]: loss(train): 0.177, acc(train): 0.953, loss(val): 0.256, acc(val): 0.907
+[epoch:113,batch:400]: loss(train): 0.180, acc(train): 0.945, loss(val): 0.257, acc(val): 0.907
+Starting epoch 114
+[epoch:114,batch:100]: loss(train): 0.186, acc(train): 0.938, loss(val): 0.261, acc(val): 0.906
+[epoch:114,batch:200]: loss(train): 0.178, acc(train): 0.930, loss(val): 0.260, acc(val): 0.908
+[epoch:114,batch:300]: loss(train): 0.171, acc(train): 0.961, loss(val): 0.261, acc(val): 0.907
+[epoch:114,batch:400]: loss(train): 0.175, acc(train): 0.930, loss(val): 0.260, acc(val): 0.908
+Starting epoch 115
+[epoch:115,batch:100]: loss(train): 0.190, acc(train): 0.977, loss(val): 0.256, acc(val): 0.908
+[epoch:115,batch:200]: loss(train): 0.176, acc(train): 0.930, loss(val): 0.264, acc(val): 0.908
+[epoch:115,batch:300]: loss(train): 0.174, acc(train): 0.922, loss(val): 0.263, acc(val): 0.907
+[epoch:115,batch:400]: loss(train): 0.177, acc(train): 0.945, loss(val): 0.261, acc(val): 0.908
+Starting epoch 116
+[epoch:116,batch:100]: loss(train): 0.183, acc(train): 0.898, loss(val): 0.254, acc(val): 0.908
+[epoch:116,batch:200]: loss(train): 0.170, acc(train): 0.953, loss(val): 0.260, acc(val): 0.907
+[epoch:116,batch:300]: loss(train): 0.179, acc(train): 0.922, loss(val): 0.263, acc(val): 0.907
+[epoch:116,batch:400]: loss(train): 0.182, acc(train): 0.914, loss(val): 0.265, acc(val): 0.908
+Starting epoch 117
+[epoch:117,batch:100]: loss(train): 0.192, acc(train): 0.930, loss(val): 0.258, acc(val): 0.910
+[epoch:117,batch:200]: loss(train): 0.171, acc(train): 0.891, loss(val): 0.268, acc(val): 0.905
+[epoch:117,batch:300]: loss(train): 0.174, acc(train): 0.938, loss(val): 0.259, acc(val): 0.909
+[epoch:117,batch:400]: loss(train): 0.180, acc(train): 0.953, loss(val): 0.262, acc(val): 0.907
+Starting epoch 118
+[epoch:118,batch:100]: loss(train): 0.169, acc(train): 0.906, loss(val): 0.253, acc(val): 0.910
+[epoch:118,batch:200]: loss(train): 0.180, acc(train): 0.922, loss(val): 0.261, acc(val): 0.907
+[epoch:118,batch:300]: loss(train): 0.175, acc(train): 0.938, loss(val): 0.266, acc(val): 0.905
+[epoch:118,batch:400]: loss(train): 0.187, acc(train): 0.961, loss(val): 0.262, acc(val): 0.908
+Starting epoch 119
+[epoch:119,batch:100]: loss(train): 0.184, acc(train): 0.914, loss(val): 0.260, acc(val): 0.908
+[epoch:119,batch:200]: loss(train): 0.179, acc(train): 0.914, loss(val): 0.259, acc(val): 0.907
+[epoch:119,batch:300]: loss(train): 0.175, acc(train): 0.953, loss(val): 0.255, acc(val): 0.910
+[epoch:119,batch:400]: loss(train): 0.175, acc(train): 0.922, loss(val): 0.257, acc(val): 0.907
+Starting epoch 120
+[epoch:120,batch:100]: loss(train): 0.187, acc(train): 0.914, loss(val): 0.252, acc(val): 0.913
+[epoch:120,batch:200]: loss(train): 0.182, acc(train): 0.930, loss(val): 0.258, acc(val): 0.905
+[epoch:120,batch:300]: loss(train): 0.175, acc(train): 0.977, loss(val): 0.265, acc(val): 0.904
+[epoch:120,batch:400]: loss(train): 0.173, acc(train): 0.945, loss(val): 0.260, acc(val): 0.906
+Starting epoch 121
+[epoch:121,batch:100]: loss(train): 0.180, acc(train): 0.938, loss(val): 0.254, acc(val): 0.907
+[epoch:121,batch:200]: loss(train): 0.176, acc(train): 0.945, loss(val): 0.263, acc(val): 0.905
+[epoch:121,batch:300]: loss(train): 0.183, acc(train): 0.961, loss(val): 0.271, acc(val): 0.905
+[epoch:121,batch:400]: loss(train): 0.173, acc(train): 0.945, loss(val): 0.261, acc(val): 0.911
+Starting epoch 122
+[epoch:122,batch:100]: loss(train): 0.181, acc(train): 0.922, loss(val): 0.254, acc(val): 0.910
+[epoch:122,batch:200]: loss(train): 0.177, acc(train): 0.945, loss(val): 0.265, acc(val): 0.905
+[epoch:122,batch:300]: loss(train): 0.176, acc(train): 0.898, loss(val): 0.264, acc(val): 0.908
+[epoch:122,batch:400]: loss(train): 0.175, acc(train): 0.906, loss(val): 0.255, acc(val): 0.908
+Starting epoch 123
+[epoch:123,batch:100]: loss(train): 0.181, acc(train): 0.969, loss(val): 0.254, acc(val): 0.912
+[epoch:123,batch:200]: loss(train): 0.174, acc(train): 0.930, loss(val): 0.264, acc(val): 0.903
+[epoch:123,batch:300]: loss(train): 0.176, acc(train): 0.961, loss(val): 0.262, acc(val): 0.906
+[epoch:123,batch:400]: loss(train): 0.176, acc(train): 0.930, loss(val): 0.274, acc(val): 0.903
+Starting epoch 124
+[epoch:124,batch:100]: loss(train): 0.179, acc(train): 0.961, loss(val): 0.258, acc(val): 0.909
+[epoch:124,batch:200]: loss(train): 0.176, acc(train): 0.930, loss(val): 0.266, acc(val): 0.908
+[epoch:124,batch:300]: loss(train): 0.178, acc(train): 0.914, loss(val): 0.258, acc(val): 0.910
+[epoch:124,batch:400]: loss(train): 0.180, acc(train): 0.953, loss(val): 0.261, acc(val): 0.908
+Starting epoch 125
+[epoch:125,batch:100]: loss(train): 0.185, acc(train): 0.953, loss(val): 0.257, acc(val): 0.907
+[epoch:125,batch:200]: loss(train): 0.168, acc(train): 0.898, loss(val): 0.258, acc(val): 0.908
+[epoch:125,batch:300]: loss(train): 0.176, acc(train): 0.930, loss(val): 0.262, acc(val): 0.906
+[epoch:125,batch:400]: loss(train): 0.177, acc(train): 0.914, loss(val): 0.260, acc(val): 0.909
+Starting epoch 126
+[epoch:126,batch:100]: loss(train): 0.185, acc(train): 0.969, loss(val): 0.255, acc(val): 0.908
+[epoch:126,batch:200]: loss(train): 0.174, acc(train): 0.969, loss(val): 0.263, acc(val): 0.909
+[epoch:126,batch:300]: loss(train): 0.172, acc(train): 0.883, loss(val): 0.257, acc(val): 0.908
+[epoch:126,batch:400]: loss(train): 0.172, acc(train): 0.914, loss(val): 0.258, acc(val): 0.908
+Starting epoch 127
+[epoch:127,batch:100]: loss(train): 0.182, acc(train): 0.938, loss(val): 0.257, acc(val): 0.908
+[epoch:127,batch:200]: loss(train): 0.167, acc(train): 0.953, loss(val): 0.261, acc(val): 0.907
+[epoch:127,batch:300]: loss(train): 0.171, acc(train): 0.922, loss(val): 0.269, acc(val): 0.905
+[epoch:127,batch:400]: loss(train): 0.178, acc(train): 0.961, loss(val): 0.260, acc(val): 0.909
+Starting epoch 128
+[epoch:128,batch:100]: loss(train): 0.180, acc(train): 0.930, loss(val): 0.260, acc(val): 0.910
+[epoch:128,batch:200]: loss(train): 0.176, acc(train): 0.945, loss(val): 0.263, acc(val): 0.908
+[epoch:128,batch:300]: loss(train): 0.176, acc(train): 0.953, loss(val): 0.256, acc(val): 0.909
+[epoch:128,batch:400]: loss(train): 0.172, acc(train): 0.930, loss(val): 0.264, acc(val): 0.907
+Starting epoch 129
+[epoch:129,batch:100]: loss(train): 0.181, acc(train): 0.938, loss(val): 0.258, acc(val): 0.911
+[epoch:129,batch:200]: loss(train): 0.167, acc(train): 0.945, loss(val): 0.269, acc(val): 0.906
+[epoch:129,batch:300]: loss(train): 0.173, acc(train): 0.914, loss(val): 0.257, acc(val): 0.909
+[epoch:129,batch:400]: loss(train): 0.172, acc(train): 0.969, loss(val): 0.260, acc(val): 0.908
+Starting epoch 130
+[epoch:130,batch:100]: loss(train): 0.182, acc(train): 0.898, loss(val): 0.256, acc(val): 0.908
+[epoch:130,batch:200]: loss(train): 0.165, acc(train): 0.922, loss(val): 0.266, acc(val): 0.905
+[epoch:130,batch:300]: loss(train): 0.173, acc(train): 0.914, loss(val): 0.262, acc(val): 0.908
+[epoch:130,batch:400]: loss(train): 0.179, acc(train): 0.930, loss(val): 0.263, acc(val): 0.909
+Starting epoch 131
+[epoch:131,batch:100]: loss(train): 0.182, acc(train): 0.945, loss(val): 0.257, acc(val): 0.909
+[epoch:131,batch:200]: loss(train): 0.172, acc(train): 0.922, loss(val): 0.263, acc(val): 0.908
+[epoch:131,batch:300]: loss(train): 0.174, acc(train): 0.914, loss(val): 0.257, acc(val): 0.908
+[epoch:131,batch:400]: loss(train): 0.175, acc(train): 0.938, loss(val): 0.260, acc(val): 0.910
+Starting epoch 132
+[epoch:132,batch:100]: loss(train): 0.176, acc(train): 0.930, loss(val): 0.253, acc(val): 0.910
+[epoch:132,batch:200]: loss(train): 0.166, acc(train): 0.953, loss(val): 0.265, acc(val): 0.909
+[epoch:132,batch:300]: loss(train): 0.173, acc(train): 0.922, loss(val): 0.266, acc(val): 0.906
+[epoch:132,batch:400]: loss(train): 0.178, acc(train): 0.953, loss(val): 0.260, acc(val): 0.908
+Starting epoch 133
+[epoch:133,batch:100]: loss(train): 0.176, acc(train): 0.953, loss(val): 0.253, acc(val): 0.910
+[epoch:133,batch:200]: loss(train): 0.172, acc(train): 0.930, loss(val): 0.265, acc(val): 0.905
+[epoch:133,batch:300]: loss(train): 0.171, acc(train): 0.969, loss(val): 0.258, acc(val): 0.909
+[epoch:133,batch:400]: loss(train): 0.178, acc(train): 0.930, loss(val): 0.258, acc(val): 0.908
+Starting epoch 134
+[epoch:134,batch:100]: loss(train): 0.185, acc(train): 0.938, loss(val): 0.257, acc(val): 0.906
+[epoch:134,batch:200]: loss(train): 0.167, acc(train): 0.953, loss(val): 0.262, acc(val): 0.907
+[epoch:134,batch:300]: loss(train): 0.165, acc(train): 0.969, loss(val): 0.258, acc(val): 0.908
+[epoch:134,batch:400]: loss(train): 0.169, acc(train): 0.953, loss(val): 0.259, acc(val): 0.912
+Starting epoch 135
+[epoch:135,batch:100]: loss(train): 0.178, acc(train): 0.961, loss(val): 0.255, acc(val): 0.910
+[epoch:135,batch:200]: loss(train): 0.166, acc(train): 0.922, loss(val): 0.260, acc(val): 0.909
+[epoch:135,batch:300]: loss(train): 0.174, acc(train): 0.914, loss(val): 0.263, acc(val): 0.903
+[epoch:135,batch:400]: loss(train): 0.174, acc(train): 0.922, loss(val): 0.257, acc(val): 0.908
+Starting epoch 136
+[epoch:136,batch:100]: loss(train): 0.165, acc(train): 0.883, loss(val): 0.254, acc(val): 0.908
+[epoch:136,batch:200]: loss(train): 0.170, acc(train): 0.922, loss(val): 0.262, acc(val): 0.910
+[epoch:136,batch:300]: loss(train): 0.166, acc(train): 0.914, loss(val): 0.264, acc(val): 0.908
+[epoch:136,batch:400]: loss(train): 0.174, acc(train): 0.938, loss(val): 0.269, acc(val): 0.905
+Starting epoch 137
+[epoch:137,batch:100]: loss(train): 0.172, acc(train): 0.945, loss(val): 0.258, acc(val): 0.909
+[epoch:137,batch:200]: loss(train): 0.171, acc(train): 0.953, loss(val): 0.260, acc(val): 0.908
+[epoch:137,batch:300]: loss(train): 0.174, acc(train): 0.945, loss(val): 0.262, acc(val): 0.907
+[epoch:137,batch:400]: loss(train): 0.171, acc(train): 0.961, loss(val): 0.263, acc(val): 0.908
+Starting epoch 138
+[epoch:138,batch:100]: loss(train): 0.175, acc(train): 0.930, loss(val): 0.255, acc(val): 0.909
+[epoch:138,batch:200]: loss(train): 0.163, acc(train): 0.914, loss(val): 0.267, acc(val): 0.908
+[epoch:138,batch:300]: loss(train): 0.169, acc(train): 0.930, loss(val): 0.271, acc(val): 0.905
+[epoch:138,batch:400]: loss(train): 0.175, acc(train): 0.945, loss(val): 0.263, acc(val): 0.905
+Starting epoch 139
+[epoch:139,batch:100]: loss(train): 0.172, acc(train): 0.938, loss(val): 0.260, acc(val): 0.912
+[epoch:139,batch:200]: loss(train): 0.167, acc(train): 0.992, loss(val): 0.262, acc(val): 0.906
+[epoch:139,batch:300]: loss(train): 0.175, acc(train): 0.883, loss(val): 0.262, acc(val): 0.907
+[epoch:139,batch:400]: loss(train): 0.169, acc(train): 0.883, loss(val): 0.276, acc(val): 0.901
+Starting epoch 140
+[epoch:140,batch:100]: loss(train): 0.172, acc(train): 0.969, loss(val): 0.258, acc(val): 0.909
+[epoch:140,batch:200]: loss(train): 0.170, acc(train): 0.938, loss(val): 0.269, acc(val): 0.907
+[epoch:140,batch:300]: loss(train): 0.170, acc(train): 0.961, loss(val): 0.263, acc(val): 0.909
+[epoch:140,batch:400]: loss(train): 0.176, acc(train): 0.938, loss(val): 0.283, acc(val): 0.897
+Starting epoch 141
+[epoch:141,batch:100]: loss(train): 0.176, acc(train): 0.961, loss(val): 0.259, acc(val): 0.908
+[epoch:141,batch:200]: loss(train): 0.169, acc(train): 0.938, loss(val): 0.256, acc(val): 0.909
+[epoch:141,batch:300]: loss(train): 0.171, acc(train): 0.953, loss(val): 0.259, acc(val): 0.906
+[epoch:141,batch:400]: loss(train): 0.172, acc(train): 0.914, loss(val): 0.263, acc(val): 0.906
+Starting epoch 142
+[epoch:142,batch:100]: loss(train): 0.169, acc(train): 0.961, loss(val): 0.254, acc(val): 0.911
+[epoch:142,batch:200]: loss(train): 0.171, acc(train): 0.953, loss(val): 0.269, acc(val): 0.906
+[epoch:142,batch:300]: loss(train): 0.167, acc(train): 0.914, loss(val): 0.263, acc(val): 0.906
+[epoch:142,batch:400]: loss(train): 0.177, acc(train): 0.953, loss(val): 0.264, acc(val): 0.909
+Starting epoch 143
+[epoch:143,batch:100]: loss(train): 0.170, acc(train): 0.906, loss(val): 0.257, acc(val): 0.908
+[epoch:143,batch:200]: loss(train): 0.174, acc(train): 0.906, loss(val): 0.264, acc(val): 0.906
+[epoch:143,batch:300]: loss(train): 0.166, acc(train): 0.938, loss(val): 0.260, acc(val): 0.908
+[epoch:143,batch:400]: loss(train): 0.170, acc(train): 0.914, loss(val): 0.259, acc(val): 0.909
+Starting epoch 144
+[epoch:144,batch:100]: loss(train): 0.178, acc(train): 0.953, loss(val): 0.256, acc(val): 0.910
+[epoch:144,batch:200]: loss(train): 0.163, acc(train): 0.945, loss(val): 0.258, acc(val): 0.910
+[epoch:144,batch:300]: loss(train): 0.172, acc(train): 0.938, loss(val): 0.266, acc(val): 0.906
+[epoch:144,batch:400]: loss(train): 0.165, acc(train): 0.930, loss(val): 0.266, acc(val): 0.905
+Starting epoch 145
+[epoch:145,batch:100]: loss(train): 0.173, acc(train): 0.953, loss(val): 0.254, acc(val): 0.910
+[epoch:145,batch:200]: loss(train): 0.168, acc(train): 0.953, loss(val): 0.260, acc(val): 0.907
+[epoch:145,batch:300]: loss(train): 0.183, acc(train): 0.938, loss(val): 0.257, acc(val): 0.908
+[epoch:145,batch:400]: loss(train): 0.165, acc(train): 0.938, loss(val): 0.255, acc(val): 0.908
+Starting epoch 146
+[epoch:146,batch:100]: loss(train): 0.175, acc(train): 0.969, loss(val): 0.257, acc(val): 0.907
+[epoch:146,batch:200]: loss(train): 0.167, acc(train): 0.922, loss(val): 0.262, acc(val): 0.908
+[epoch:146,batch:300]: loss(train): 0.166, acc(train): 0.922, loss(val): 0.257, acc(val): 0.910
+[epoch:146,batch:400]: loss(train): 0.169, acc(train): 0.984, loss(val): 0.261, acc(val): 0.909
+Starting epoch 147
+[epoch:147,batch:100]: loss(train): 0.169, acc(train): 0.914, loss(val): 0.254, acc(val): 0.910
+[epoch:147,batch:200]: loss(train): 0.162, acc(train): 0.953, loss(val): 0.258, acc(val): 0.906
+[epoch:147,batch:300]: loss(train): 0.171, acc(train): 0.945, loss(val): 0.270, acc(val): 0.906
+[epoch:147,batch:400]: loss(train): 0.168, acc(train): 0.953, loss(val): 0.263, acc(val): 0.907
+Starting epoch 148
+[epoch:148,batch:100]: loss(train): 0.168, acc(train): 0.945, loss(val): 0.256, acc(val): 0.909
+[epoch:148,batch:200]: loss(train): 0.167, acc(train): 0.945, loss(val): 0.257, acc(val): 0.909
+[epoch:148,batch:300]: loss(train): 0.169, acc(train): 0.945, loss(val): 0.257, acc(val): 0.907
+[epoch:148,batch:400]: loss(train): 0.167, acc(train): 0.930, loss(val): 0.262, acc(val): 0.908
+Starting epoch 149
+[epoch:149,batch:100]: loss(train): 0.168, acc(train): 0.953, loss(val): 0.259, acc(val): 0.911
+[epoch:149,batch:200]: loss(train): 0.162, acc(train): 0.953, loss(val): 0.265, acc(val): 0.906
+[epoch:149,batch:300]: loss(train): 0.165, acc(train): 0.938, loss(val): 0.260, acc(val): 0.908
+[epoch:149,batch:400]: loss(train): 0.166, acc(train): 0.938, loss(val): 0.267, acc(val): 0.907
+Starting epoch 150
+[epoch:150,batch:100]: loss(train): 0.165, acc(train): 0.930, loss(val): 0.254, acc(val): 0.912
+[epoch:150,batch:200]: loss(train): 0.160, acc(train): 0.938, loss(val): 0.251, acc(val): 0.911
+[epoch:150,batch:300]: loss(train): 0.159, acc(train): 0.953, loss(val): 0.251, acc(val): 0.913
+[epoch:150,batch:400]: loss(train): 0.148, acc(train): 0.992, loss(val): 0.256, acc(val): 0.909
+Starting epoch 151
+[epoch:151,batch:100]: loss(train): 0.170, acc(train): 0.984, loss(val): 0.254, acc(val): 0.909
+[epoch:151,batch:200]: loss(train): 0.149, acc(train): 0.977, loss(val): 0.254, acc(val): 0.910
+[epoch:151,batch:300]: loss(train): 0.155, acc(train): 0.977, loss(val): 0.253, acc(val): 0.910
+[epoch:151,batch:400]: loss(train): 0.157, acc(train): 0.938, loss(val): 0.255, acc(val): 0.912
+Starting epoch 152
+[epoch:152,batch:100]: loss(train): 0.164, acc(train): 0.938, loss(val): 0.248, acc(val): 0.911
+[epoch:152,batch:200]: loss(train): 0.160, acc(train): 0.961, loss(val): 0.256, acc(val): 0.911
+[epoch:152,batch:300]: loss(train): 0.152, acc(train): 0.977, loss(val): 0.258, acc(val): 0.906
+[epoch:152,batch:400]: loss(train): 0.159, acc(train): 0.953, loss(val): 0.255, acc(val): 0.912
+Starting epoch 153
+[epoch:153,batch:100]: loss(train): 0.159, acc(train): 0.953, loss(val): 0.255, acc(val): 0.911
+[epoch:153,batch:200]: loss(train): 0.155, acc(train): 0.945, loss(val): 0.252, acc(val): 0.912
+[epoch:153,batch:300]: loss(train): 0.155, acc(train): 0.961, loss(val): 0.256, acc(val): 0.909
+[epoch:153,batch:400]: loss(train): 0.160, acc(train): 0.930, loss(val): 0.251, acc(val): 0.910
+Starting epoch 154
+[epoch:154,batch:100]: loss(train): 0.170, acc(train): 0.953, loss(val): 0.253, acc(val): 0.910
+[epoch:154,batch:200]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.250, acc(val): 0.909
+[epoch:154,batch:300]: loss(train): 0.153, acc(train): 0.977, loss(val): 0.254, acc(val): 0.909
+[epoch:154,batch:400]: loss(train): 0.156, acc(train): 0.938, loss(val): 0.257, acc(val): 0.911
+Starting epoch 155
+[epoch:155,batch:100]: loss(train): 0.170, acc(train): 0.945, loss(val): 0.258, acc(val): 0.909
+[epoch:155,batch:200]: loss(train): 0.160, acc(train): 0.969, loss(val): 0.251, acc(val): 0.912
+[epoch:155,batch:300]: loss(train): 0.151, acc(train): 0.906, loss(val): 0.262, acc(val): 0.910
+[epoch:155,batch:400]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.256, acc(val): 0.911
+Starting epoch 156
+[epoch:156,batch:100]: loss(train): 0.171, acc(train): 0.922, loss(val): 0.257, acc(val): 0.910
+[epoch:156,batch:200]: loss(train): 0.150, acc(train): 0.984, loss(val): 0.258, acc(val): 0.908
+[epoch:156,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.259, acc(val): 0.908
+[epoch:156,batch:400]: loss(train): 0.158, acc(train): 0.938, loss(val): 0.253, acc(val): 0.910
+Starting epoch 157
+[epoch:157,batch:100]: loss(train): 0.160, acc(train): 0.914, loss(val): 0.257, acc(val): 0.912
+[epoch:157,batch:200]: loss(train): 0.159, acc(train): 0.906, loss(val): 0.251, acc(val): 0.910
+[epoch:157,batch:300]: loss(train): 0.154, acc(train): 0.930, loss(val): 0.254, acc(val): 0.912
+[epoch:157,batch:400]: loss(train): 0.159, acc(train): 0.961, loss(val): 0.255, acc(val): 0.910
+Starting epoch 158
+[epoch:158,batch:100]: loss(train): 0.166, acc(train): 0.961, loss(val): 0.253, acc(val): 0.911
+[epoch:158,batch:200]: loss(train): 0.150, acc(train): 0.930, loss(val): 0.256, acc(val): 0.912
+[epoch:158,batch:300]: loss(train): 0.160, acc(train): 0.906, loss(val): 0.256, acc(val): 0.912
+[epoch:158,batch:400]: loss(train): 0.158, acc(train): 0.914, loss(val): 0.256, acc(val): 0.911
+Starting epoch 159
+[epoch:159,batch:100]: loss(train): 0.168, acc(train): 0.938, loss(val): 0.255, acc(val): 0.911
+[epoch:159,batch:200]: loss(train): 0.156, acc(train): 0.945, loss(val): 0.257, acc(val): 0.910
+[epoch:159,batch:300]: loss(train): 0.152, acc(train): 0.961, loss(val): 0.257, acc(val): 0.910
+[epoch:159,batch:400]: loss(train): 0.150, acc(train): 0.953, loss(val): 0.253, acc(val): 0.910
+Starting epoch 160
+[epoch:160,batch:100]: loss(train): 0.168, acc(train): 0.930, loss(val): 0.255, acc(val): 0.911
+[epoch:160,batch:200]: loss(train): 0.156, acc(train): 0.922, loss(val): 0.256, acc(val): 0.912
+[epoch:160,batch:300]: loss(train): 0.151, acc(train): 0.961, loss(val): 0.256, acc(val): 0.910
+[epoch:160,batch:400]: loss(train): 0.154, acc(train): 0.961, loss(val): 0.256, acc(val): 0.911
+Starting epoch 161
+[epoch:161,batch:100]: loss(train): 0.172, acc(train): 0.930, loss(val): 0.250, acc(val): 0.912
+[epoch:161,batch:200]: loss(train): 0.155, acc(train): 0.938, loss(val): 0.253, acc(val): 0.911
+[epoch:161,batch:300]: loss(train): 0.154, acc(train): 0.984, loss(val): 0.258, acc(val): 0.910
+[epoch:161,batch:400]: loss(train): 0.153, acc(train): 0.977, loss(val): 0.256, acc(val): 0.911
+Starting epoch 162
+[epoch:162,batch:100]: loss(train): 0.165, acc(train): 0.930, loss(val): 0.255, acc(val): 0.912
+[epoch:162,batch:200]: loss(train): 0.157, acc(train): 0.953, loss(val): 0.254, acc(val): 0.909
+[epoch:162,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.252, acc(val): 0.913
+[epoch:162,batch:400]: loss(train): 0.154, acc(train): 0.914, loss(val): 0.256, acc(val): 0.910
+Starting epoch 163
+[epoch:163,batch:100]: loss(train): 0.158, acc(train): 0.953, loss(val): 0.253, acc(val): 0.907
+[epoch:163,batch:200]: loss(train): 0.159, acc(train): 0.977, loss(val): 0.252, acc(val): 0.913
+[epoch:163,batch:300]: loss(train): 0.154, acc(train): 0.969, loss(val): 0.254, acc(val): 0.912
+[epoch:163,batch:400]: loss(train): 0.159, acc(train): 0.961, loss(val): 0.255, acc(val): 0.912
+Starting epoch 164
+[epoch:164,batch:100]: loss(train): 0.164, acc(train): 0.922, loss(val): 0.253, acc(val): 0.910
+[epoch:164,batch:200]: loss(train): 0.157, acc(train): 0.945, loss(val): 0.256, acc(val): 0.912
+[epoch:164,batch:300]: loss(train): 0.155, acc(train): 0.898, loss(val): 0.257, acc(val): 0.911
+[epoch:164,batch:400]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.255, acc(val): 0.911
+Starting epoch 165
+[epoch:165,batch:100]: loss(train): 0.165, acc(train): 0.945, loss(val): 0.257, acc(val): 0.911
+[epoch:165,batch:200]: loss(train): 0.161, acc(train): 0.945, loss(val): 0.255, acc(val): 0.909
+[epoch:165,batch:300]: loss(train): 0.154, acc(train): 0.922, loss(val): 0.254, acc(val): 0.912
+[epoch:165,batch:400]: loss(train): 0.153, acc(train): 0.953, loss(val): 0.258, acc(val): 0.907
+Starting epoch 166
+[epoch:166,batch:100]: loss(train): 0.161, acc(train): 0.898, loss(val): 0.255, acc(val): 0.911
+[epoch:166,batch:200]: loss(train): 0.155, acc(train): 0.930, loss(val): 0.257, acc(val): 0.909
+[epoch:166,batch:300]: loss(train): 0.155, acc(train): 0.930, loss(val): 0.255, acc(val): 0.907
+[epoch:166,batch:400]: loss(train): 0.159, acc(train): 0.945, loss(val): 0.261, acc(val): 0.907
+Starting epoch 167
+[epoch:167,batch:100]: loss(train): 0.161, acc(train): 0.938, loss(val): 0.256, acc(val): 0.909
+[epoch:167,batch:200]: loss(train): 0.149, acc(train): 0.945, loss(val): 0.255, acc(val): 0.909
+[epoch:167,batch:300]: loss(train): 0.158, acc(train): 0.938, loss(val): 0.252, acc(val): 0.909
+[epoch:167,batch:400]: loss(train): 0.160, acc(train): 0.953, loss(val): 0.250, acc(val): 0.913
+Starting epoch 168
+[epoch:168,batch:100]: loss(train): 0.166, acc(train): 0.945, loss(val): 0.257, acc(val): 0.908
+[epoch:168,batch:200]: loss(train): 0.155, acc(train): 0.945, loss(val): 0.253, acc(val): 0.912
+[epoch:168,batch:300]: loss(train): 0.155, acc(train): 0.945, loss(val): 0.258, acc(val): 0.909
+[epoch:168,batch:400]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.257, acc(val): 0.908
+Starting epoch 169
+[epoch:169,batch:100]: loss(train): 0.168, acc(train): 0.906, loss(val): 0.257, acc(val): 0.909
+[epoch:169,batch:200]: loss(train): 0.154, acc(train): 0.945, loss(val): 0.257, acc(val): 0.909
+[epoch:169,batch:300]: loss(train): 0.153, acc(train): 0.953, loss(val): 0.257, acc(val): 0.912
+[epoch:169,batch:400]: loss(train): 0.153, acc(train): 0.938, loss(val): 0.253, acc(val): 0.912
+Starting epoch 170
+[epoch:170,batch:100]: loss(train): 0.161, acc(train): 0.922, loss(val): 0.259, acc(val): 0.909
+[epoch:170,batch:200]: loss(train): 0.151, acc(train): 0.891, loss(val): 0.255, acc(val): 0.911
+[epoch:170,batch:300]: loss(train): 0.153, acc(train): 0.953, loss(val): 0.256, acc(val): 0.911
+[epoch:170,batch:400]: loss(train): 0.161, acc(train): 0.945, loss(val): 0.253, acc(val): 0.909
+Starting epoch 171
+[epoch:171,batch:100]: loss(train): 0.163, acc(train): 0.938, loss(val): 0.253, acc(val): 0.910
+[epoch:171,batch:200]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.259, acc(val): 0.909
+[epoch:171,batch:300]: loss(train): 0.161, acc(train): 0.961, loss(val): 0.256, acc(val): 0.909
+[epoch:171,batch:400]: loss(train): 0.155, acc(train): 0.938, loss(val): 0.254, acc(val): 0.912
+Starting epoch 172
+[epoch:172,batch:100]: loss(train): 0.172, acc(train): 0.938, loss(val): 0.257, acc(val): 0.909
+[epoch:172,batch:200]: loss(train): 0.154, acc(train): 0.953, loss(val): 0.258, acc(val): 0.910
+[epoch:172,batch:300]: loss(train): 0.152, acc(train): 0.938, loss(val): 0.257, acc(val): 0.910
+[epoch:172,batch:400]: loss(train): 0.148, acc(train): 0.945, loss(val): 0.258, acc(val): 0.910
+Starting epoch 173
+[epoch:173,batch:100]: loss(train): 0.168, acc(train): 0.945, loss(val): 0.254, acc(val): 0.912
+[epoch:173,batch:200]: loss(train): 0.156, acc(train): 0.961, loss(val): 0.253, acc(val): 0.909
+[epoch:173,batch:300]: loss(train): 0.152, acc(train): 0.930, loss(val): 0.256, acc(val): 0.913
+[epoch:173,batch:400]: loss(train): 0.152, acc(train): 0.969, loss(val): 0.261, acc(val): 0.908
+Starting epoch 174
+[epoch:174,batch:100]: loss(train): 0.169, acc(train): 0.922, loss(val): 0.252, acc(val): 0.911
+[epoch:174,batch:200]: loss(train): 0.156, acc(train): 0.945, loss(val): 0.253, acc(val): 0.911
+[epoch:174,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.258, acc(val): 0.910
+[epoch:174,batch:400]: loss(train): 0.153, acc(train): 0.938, loss(val): 0.257, acc(val): 0.910
+Starting epoch 175
+[epoch:175,batch:100]: loss(train): 0.164, acc(train): 0.914, loss(val): 0.260, acc(val): 0.908
+[epoch:175,batch:200]: loss(train): 0.158, acc(train): 0.969, loss(val): 0.253, acc(val): 0.911
+[epoch:175,batch:300]: loss(train): 0.153, acc(train): 0.922, loss(val): 0.259, acc(val): 0.909
+[epoch:175,batch:400]: loss(train): 0.154, acc(train): 0.953, loss(val): 0.257, acc(val): 0.910
+Starting epoch 176
+[epoch:176,batch:100]: loss(train): 0.161, acc(train): 0.930, loss(val): 0.261, acc(val): 0.909
+[epoch:176,batch:200]: loss(train): 0.151, acc(train): 0.961, loss(val): 0.252, acc(val): 0.911
+[epoch:176,batch:300]: loss(train): 0.154, acc(train): 0.945, loss(val): 0.258, acc(val): 0.910
+[epoch:176,batch:400]: loss(train): 0.161, acc(train): 0.938, loss(val): 0.260, acc(val): 0.910
+Starting epoch 177
+[epoch:177,batch:100]: loss(train): 0.162, acc(train): 0.969, loss(val): 0.252, acc(val): 0.910
+[epoch:177,batch:200]: loss(train): 0.152, acc(train): 0.961, loss(val): 0.252, acc(val): 0.911
+[epoch:177,batch:300]: loss(train): 0.152, acc(train): 0.898, loss(val): 0.260, acc(val): 0.909
+[epoch:177,batch:400]: loss(train): 0.156, acc(train): 0.945, loss(val): 0.256, acc(val): 0.910
+Starting epoch 178
+[epoch:178,batch:100]: loss(train): 0.170, acc(train): 0.938, loss(val): 0.256, acc(val): 0.911
+[epoch:178,batch:200]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.259, acc(val): 0.909
+[epoch:178,batch:300]: loss(train): 0.146, acc(train): 0.930, loss(val): 0.257, acc(val): 0.909
+[epoch:178,batch:400]: loss(train): 0.158, acc(train): 0.938, loss(val): 0.256, acc(val): 0.911
+Starting epoch 179
+[epoch:179,batch:100]: loss(train): 0.167, acc(train): 0.930, loss(val): 0.257, acc(val): 0.911
+[epoch:179,batch:200]: loss(train): 0.154, acc(train): 0.961, loss(val): 0.259, acc(val): 0.910
+[epoch:179,batch:300]: loss(train): 0.152, acc(train): 0.922, loss(val): 0.257, acc(val): 0.911
+[epoch:179,batch:400]: loss(train): 0.157, acc(train): 0.930, loss(val): 0.257, acc(val): 0.911
+Starting epoch 180
+[epoch:180,batch:100]: loss(train): 0.174, acc(train): 0.930, loss(val): 0.252, acc(val): 0.910
+[epoch:180,batch:200]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.257, acc(val): 0.911
+[epoch:180,batch:300]: loss(train): 0.154, acc(train): 0.945, loss(val): 0.254, acc(val): 0.912
+[epoch:180,batch:400]: loss(train): 0.149, acc(train): 0.938, loss(val): 0.256, acc(val): 0.911
+Starting epoch 181
+[epoch:181,batch:100]: loss(train): 0.161, acc(train): 0.914, loss(val): 0.258, acc(val): 0.909
+[epoch:181,batch:200]: loss(train): 0.155, acc(train): 0.938, loss(val): 0.257, acc(val): 0.908
+[epoch:181,batch:300]: loss(train): 0.153, acc(train): 0.930, loss(val): 0.255, acc(val): 0.910
+[epoch:181,batch:400]: loss(train): 0.153, acc(train): 0.969, loss(val): 0.257, acc(val): 0.910
+Starting epoch 182
+[epoch:182,batch:100]: loss(train): 0.162, acc(train): 0.938, loss(val): 0.256, acc(val): 0.910
+[epoch:182,batch:200]: loss(train): 0.151, acc(train): 0.945, loss(val): 0.257, acc(val): 0.911
+[epoch:182,batch:300]: loss(train): 0.159, acc(train): 0.961, loss(val): 0.254, acc(val): 0.908
+[epoch:182,batch:400]: loss(train): 0.154, acc(train): 0.945, loss(val): 0.258, acc(val): 0.910
+Starting epoch 183
+[epoch:183,batch:100]: loss(train): 0.168, acc(train): 0.938, loss(val): 0.258, acc(val): 0.911
+[epoch:183,batch:200]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.256, acc(val): 0.909
+[epoch:183,batch:300]: loss(train): 0.152, acc(train): 0.930, loss(val): 0.258, acc(val): 0.908
+[epoch:183,batch:400]: loss(train): 0.151, acc(train): 0.930, loss(val): 0.256, acc(val): 0.911
+Starting epoch 184
+[epoch:184,batch:100]: loss(train): 0.169, acc(train): 0.945, loss(val): 0.258, acc(val): 0.909
+[epoch:184,batch:200]: loss(train): 0.157, acc(train): 0.961, loss(val): 0.255, acc(val): 0.910
+[epoch:184,batch:300]: loss(train): 0.155, acc(train): 0.945, loss(val): 0.255, acc(val): 0.911
+[epoch:184,batch:400]: loss(train): 0.151, acc(train): 0.945, loss(val): 0.257, acc(val): 0.910
+Starting epoch 185
+[epoch:185,batch:100]: loss(train): 0.165, acc(train): 0.945, loss(val): 0.255, acc(val): 0.909
+[epoch:185,batch:200]: loss(train): 0.159, acc(train): 0.883, loss(val): 0.257, acc(val): 0.909
+[epoch:185,batch:300]: loss(train): 0.150, acc(train): 0.938, loss(val): 0.257, acc(val): 0.912
+[epoch:185,batch:400]: loss(train): 0.157, acc(train): 0.930, loss(val): 0.258, acc(val): 0.911
+Starting epoch 186
+[epoch:186,batch:100]: loss(train): 0.170, acc(train): 0.945, loss(val): 0.259, acc(val): 0.911
+[epoch:186,batch:200]: loss(train): 0.151, acc(train): 0.945, loss(val): 0.256, acc(val): 0.912
+[epoch:186,batch:300]: loss(train): 0.155, acc(train): 0.953, loss(val): 0.258, acc(val): 0.911
+[epoch:186,batch:400]: loss(train): 0.158, acc(train): 0.930, loss(val): 0.257, acc(val): 0.908
+Starting epoch 187
+[epoch:187,batch:100]: loss(train): 0.170, acc(train): 0.961, loss(val): 0.260, acc(val): 0.909
+[epoch:187,batch:200]: loss(train): 0.154, acc(train): 0.938, loss(val): 0.257, acc(val): 0.909
+[epoch:187,batch:300]: loss(train): 0.156, acc(train): 0.914, loss(val): 0.257, acc(val): 0.911
+[epoch:187,batch:400]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.256, acc(val): 0.910
+Starting epoch 188
+[epoch:188,batch:100]: loss(train): 0.166, acc(train): 0.891, loss(val): 0.257, acc(val): 0.910
+[epoch:188,batch:200]: loss(train): 0.156, acc(train): 0.953, loss(val): 0.260, acc(val): 0.910
+[epoch:188,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.257, acc(val): 0.909
+[epoch:188,batch:400]: loss(train): 0.158, acc(train): 0.930, loss(val): 0.256, acc(val): 0.910
+Starting epoch 189
+[epoch:189,batch:100]: loss(train): 0.166, acc(train): 0.945, loss(val): 0.258, acc(val): 0.911
+[epoch:189,batch:200]: loss(train): 0.150, acc(train): 0.938, loss(val): 0.252, acc(val): 0.911
+[epoch:189,batch:300]: loss(train): 0.152, acc(train): 0.969, loss(val): 0.256, acc(val): 0.910
+[epoch:189,batch:400]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.259, acc(val): 0.910
+Starting epoch 190
+[epoch:190,batch:100]: loss(train): 0.165, acc(train): 0.930, loss(val): 0.254, acc(val): 0.909
+[epoch:190,batch:200]: loss(train): 0.163, acc(train): 0.922, loss(val): 0.255, acc(val): 0.911
+[epoch:190,batch:300]: loss(train): 0.146, acc(train): 1.000, loss(val): 0.257, acc(val): 0.910
+[epoch:190,batch:400]: loss(train): 0.150, acc(train): 0.945, loss(val): 0.257, acc(val): 0.911
+Starting epoch 191
+[epoch:191,batch:100]: loss(train): 0.165, acc(train): 0.930, loss(val): 0.255, acc(val): 0.913
+[epoch:191,batch:200]: loss(train): 0.157, acc(train): 0.945, loss(val): 0.254, acc(val): 0.912
+[epoch:191,batch:300]: loss(train): 0.149, acc(train): 0.930, loss(val): 0.258, acc(val): 0.908
+[epoch:191,batch:400]: loss(train): 0.152, acc(train): 0.852, loss(val): 0.256, acc(val): 0.912
+Starting epoch 192
+[epoch:192,batch:100]: loss(train): 0.166, acc(train): 0.906, loss(val): 0.260, acc(val): 0.909
+[epoch:192,batch:200]: loss(train): 0.149, acc(train): 0.953, loss(val): 0.253, acc(val): 0.912
+[epoch:192,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.259, acc(val): 0.910
+[epoch:192,batch:400]: loss(train): 0.150, acc(train): 0.945, loss(val): 0.260, acc(val): 0.911
+Starting epoch 193
+[epoch:193,batch:100]: loss(train): 0.164, acc(train): 0.914, loss(val): 0.258, acc(val): 0.910
+[epoch:193,batch:200]: loss(train): 0.152, acc(train): 0.938, loss(val): 0.261, acc(val): 0.907
+[epoch:193,batch:300]: loss(train): 0.155, acc(train): 0.953, loss(val): 0.252, acc(val): 0.912
+[epoch:193,batch:400]: loss(train): 0.151, acc(train): 0.914, loss(val): 0.255, acc(val): 0.910
+Starting epoch 194
+[epoch:194,batch:100]: loss(train): 0.163, acc(train): 0.969, loss(val): 0.255, acc(val): 0.910
+[epoch:194,batch:200]: loss(train): 0.152, acc(train): 0.945, loss(val): 0.261, acc(val): 0.909
+[epoch:194,batch:300]: loss(train): 0.152, acc(train): 0.945, loss(val): 0.257, acc(val): 0.910
+[epoch:194,batch:400]: loss(train): 0.154, acc(train): 0.945, loss(val): 0.259, acc(val): 0.908
+Starting epoch 195
+[epoch:195,batch:100]: loss(train): 0.166, acc(train): 0.906, loss(val): 0.257, acc(val): 0.909
+[epoch:195,batch:200]: loss(train): 0.157, acc(train): 0.930, loss(val): 0.257, acc(val): 0.910
+[epoch:195,batch:300]: loss(train): 0.153, acc(train): 0.969, loss(val): 0.254, acc(val): 0.913
+[epoch:195,batch:400]: loss(train): 0.149, acc(train): 0.945, loss(val): 0.258, acc(val): 0.912
+Starting epoch 196
+[epoch:196,batch:100]: loss(train): 0.155, acc(train): 0.961, loss(val): 0.255, acc(val): 0.910
+[epoch:196,batch:200]: loss(train): 0.158, acc(train): 0.961, loss(val): 0.262, acc(val): 0.909
+[epoch:196,batch:300]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.256, acc(val): 0.912
+[epoch:196,batch:400]: loss(train): 0.153, acc(train): 0.922, loss(val): 0.255, acc(val): 0.910
+Starting epoch 197
+[epoch:197,batch:100]: loss(train): 0.169, acc(train): 0.945, loss(val): 0.256, acc(val): 0.911
+[epoch:197,batch:200]: loss(train): 0.153, acc(train): 0.961, loss(val): 0.253, acc(val): 0.911
+[epoch:197,batch:300]: loss(train): 0.154, acc(train): 0.938, loss(val): 0.258, acc(val): 0.910
+[epoch:197,batch:400]: loss(train): 0.150, acc(train): 0.922, loss(val): 0.256, acc(val): 0.912
+Starting epoch 198
+[epoch:198,batch:100]: loss(train): 0.164, acc(train): 0.914, loss(val): 0.259, acc(val): 0.909
+[epoch:198,batch:200]: loss(train): 0.158, acc(train): 0.945, loss(val): 0.258, acc(val): 0.911
+[epoch:198,batch:300]: loss(train): 0.152, acc(train): 0.930, loss(val): 0.255, acc(val): 0.909
+[epoch:198,batch:400]: loss(train): 0.154, acc(train): 0.969, loss(val): 0.255, acc(val): 0.911
+Starting epoch 199
+[epoch:199,batch:100]: loss(train): 0.162, acc(train): 0.930, loss(val): 0.256, acc(val): 0.910
+[epoch:199,batch:200]: loss(train): 0.155, acc(train): 0.906, loss(val): 0.252, acc(val): 0.912
+[epoch:199,batch:300]: loss(train): 0.148, acc(train): 0.984, loss(val): 0.261, acc(val): 0.906
+[epoch:199,batch:400]: loss(train): 0.153, acc(train): 0.898, loss(val): 0.255, acc(val): 0.912
+Starting epoch 200
+[epoch:200,batch:100]: loss(train): 0.163, acc(train): 0.859, loss(val): 0.259, acc(val): 0.908
+[epoch:200,batch:200]: loss(train): 0.153, acc(train): 0.922, loss(val): 0.255, acc(val): 0.911
+[epoch:200,batch:300]: loss(train): 0.153, acc(train): 0.945, loss(val): 0.259, acc(val): 0.909
+[epoch:200,batch:400]: loss(train): 0.153, acc(train): 0.953, loss(val): 0.255, acc(val): 0.910

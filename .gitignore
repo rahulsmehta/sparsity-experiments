@@ -23,4 +23,6 @@ checkpoints/
 experiment_data/
 flower-data/
 ILSVRC2010_*
-tiny-imagenet/
+*imagenet*/
+*mnist*/
+

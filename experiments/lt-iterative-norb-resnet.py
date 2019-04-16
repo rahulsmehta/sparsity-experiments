@@ -84,23 +84,22 @@ testset_tr = NORB(root='./norb-data/', transform=transform_test, train=False)
 testloader_tr = torch.utils.data.DataLoader(testset_tr, batch_size=TEST_BATCH_SIZE,
                                          shuffle=False, num_workers=2)
 
-
-Network = VGG
+Network = ResNet18
 print('Lottery Ticket Experiment for {} with pruning rate {} on device {}'.format(Network, 100*(0.8**pruning_iter) ,device))
 
 
 def get_lr(epoch):
-    if (epoch+1) >= 120:
+    if (epoch+1) >= 150:
         return 1e-4
-    elif (epoch+1) >= 80:
+    elif (epoch+1) >= 100:
         return 1e-3
-    return 1e-2
+    return 5e-3
 
 # Train base network
 print('Training base network...')
-net_base = Network('VGG19',trainloader, testloader, device=device)
+net_base = Network(trainloader, testloader, device=device)
 net_base = net_base.to(device)
-torch.save(net_base.state_dict(), './checkpoints/iterative-pruning-vgg-cifar10/{}-init'.format(EXPERIMENT_NAME))
+torch.save(net_base.state_dict(), './checkpoints/iterative-pruning-norb-resnet/{}-init'.format(EXPERIMENT_NAME))
 
 #lr_schedule=np.concatenate(([15e-5, 2*15e-5, 4*15e-5, 8*15e-5],np.repeat(8*15e-5, N_EPOCH-4)))
 train_losses, val_losses, train_accs, val_accs = [], [], [], []
@@ -115,19 +114,19 @@ for epoch in range(N_EPOCH):
     if stopped:
         break
 
-torch.save(net_base.state_dict(), './checkpoints/iterative-pruning-vgg-cifar10/{}-trained'.format(EXPERIMENT_NAME))
+torch.save(net_base.state_dict(), './checkpoints/iterative-pruning-norb-resnet/{}-trained'.format(EXPERIMENT_NAME))
 save_data = {'train_losses': train_losses, 
              'val_losses': val_losses, 
              'train_accs': train_accs, 
              'val_accs': val_accs}
-pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-vgg-cifar10/{}-init.csv'.format(EXPERIMENT_NAME), index=None)
+pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-norb-resnet/{}-init.csv'.format(EXPERIMENT_NAME), index=None)
 
 # Iterative pruning 
 to_retain_iter = 0.8
 
-net_ft = Network('VGG19',trainloader, testloader, device=device)
+net_ft = Network(trainloader, testloader, device=device)
 net_ft = net_ft.to(device)
-net_ft.load_state_dict(torch.load('./checkpoints/iterative-pruning-vgg-cifar10/{}-trained'.format(EXPERIMENT_NAME)))
+net_ft.load_state_dict(torch.load('./checkpoints/iterative-pruning-norb-resnet/{}-trained'.format(EXPERIMENT_NAME)))
 val_acc, _ = net_ft.test()
 before_count = net_ft.param_count()
 
@@ -149,19 +148,21 @@ for prune_epoch in range(pruning_iter):
             optimizer, plot=True, data=plt_data, LOG=LOG, pruner=pruner, early_stop=val_acc)
         if stopped:
             break
-    pruner_path = 'experiment_data/iterative-pruning-vgg-cifar10/{}-{}.p'.format(EXPERIMENT_NAME, prune_epoch+1)
+    pruner_path = 'experiment_data/iterative-pruning-norb-resnet/{}-{}.p'.format(EXPERIMENT_NAME, prune_epoch+1)
     pickle.dump(pruner, open(pruner_path, "wb" ) )
 
 
 print('After pruning: {}, params: {}'.format(net_ft.test()[0], after_count))
 
+N_TRANSFER_EPOCH = 50
+
 # Retrain from late reset initialization
 for prune_epoch in range(pruning_iter):
-    pruner_path = "experiment_data/iterative-pruning-vgg-cifar10/{}-{}.p".format(EXPERIMENT_NAME, prune_epoch+1)
+    pruner_path = "experiment_data/iterative-pruning-norb-resnet/{}-{}.p".format(EXPERIMENT_NAME, prune_epoch+1)
     print('Retraining from late reset on NORB at pruning level {}...'.format(prune_epoch+1))
-    net_late_reset = Network('VGG19',trainloader_tr, testloader_tr, device=device)
+    net_late_reset = Network(trainloader_tr, testloader_tr, device=device)
     net_late_reset = net_late_reset.to(device)
-    net_late_reset.load_state_dict(torch.load('./checkpoints/iterative-pruning-vgg-cifar10/{}-trained'.format(EXPERIMENT_NAME)))
+    net_late_reset.load_state_dict(torch.load('./checkpoints/iterative-pruning-norb-resnet/{}-trained'.format(EXPERIMENT_NAME)))
 
     pruner = pickle.load(open(pruner_path, 'rb'))
     _masks = pruner.masks
@@ -173,7 +174,7 @@ for prune_epoch in range(pruning_iter):
     pruner_late_reset.apply_mask(prune_global=True)
     print(net_late_reset.param_count())
 
-    for epoch in range(N_EPOCH):
+    for epoch in range(N_TRANSFER_EPOCH):
         print('Starting epoch {}'.format(epoch+1))
         optimizer = optim.SGD(net_late_reset.parameters(), lr=get_lr(epoch), momentum=0.9, weight_decay=1e-4)
         plt_data = (train_losses, val_losses, train_accs, val_accs)
@@ -182,20 +183,20 @@ for prune_epoch in range(pruning_iter):
         if stop:
             break
 
-    torch.save(net_late_reset.state_dict(), './checkpoints/iterative-pruning-vgg-cifar10/{}-{}-late-reset-trained'.format(EXPERIMENT_NAME, prune_epoch+1))
+    torch.save(net_late_reset.state_dict(), './checkpoints/iterative-pruning-norb-resnet/{}-{}-late-reset-trained'.format(EXPERIMENT_NAME, prune_epoch+1))
     save_data = {'train_losses': train_losses, 
                 'val_losses': val_losses, 
                 'train_accs': train_accs, 
                 'val_accs': val_accs}
-    pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-vgg-cifar10/{}-{}-late-reset.csv'.format(EXPERIMENT_NAME, prune_epoch+1), index=None)
+    pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-norb-resnet/{}-{}-late-reset.csv'.format(EXPERIMENT_NAME, prune_epoch+1), index=None)
 
 # Retrain from winning ticket initialization
 for prune_epoch in range(pruning_iter):
-    pruner_path = "experiment_data/iterative-pruning-vgg-cifar10/{}-{}.p".format(EXPERIMENT_NAME, prune_epoch+1)
+    pruner_path = "experiment_data/iterative-pruning-norb-resnet/{}-{}.p".format(EXPERIMENT_NAME, prune_epoch+1)
     print('Retraining from winning ticket initialization on NORB at pruning level {}...'.format(prune_epoch+1))
-    net_retrain = Network('VGG19',trainloader_tr, testloader_tr, device=device)
+    net_retrain = Network(trainloader_tr, testloader_tr, device=device)
     net_retrain = net_retrain.to(device)
-    net_retrain.load_state_dict(torch.load('./checkpoints/iterative-pruning-vgg-cifar10/{}-init'.format(EXPERIMENT_NAME)))
+    net_retrain.load_state_dict(torch.load('./checkpoints/iterative-pruning-norb-resnet/{}-init'.format(EXPERIMENT_NAME)))
 
     pruner = pickle.load(open(pruner_path, 'rb'))
     _masks = pruner.masks
@@ -216,19 +217,19 @@ for prune_epoch in range(pruning_iter):
         if stop:
             break
 
-    torch.save(net_retrain.state_dict(), './checkpoints/iterative-pruning-vgg-cifar10/{}-{}-reinit-trained'.format(EXPERIMENT_NAME, prune_epoch+1))
+    torch.save(net_retrain.state_dict(), './checkpoints/iterative-pruning-norb-resnet/{}-{}-reinit-trained'.format(EXPERIMENT_NAME, prune_epoch+1))
     save_data = {'train_losses': train_losses, 
                 'val_losses': val_losses, 
                 'train_accs': train_accs, 
                 'val_accs': val_accs}
-    pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-vgg-cifar10/{}-{}-reinit.csv'.format(EXPERIMENT_NAME, prune_epoch+1), index=None)
+    pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-norb-resnet/{}-{}-reinit.csv'.format(EXPERIMENT_NAME, prune_epoch+1), index=None)
 
 # Retrain from random initialization
-# pruner_path = "experiment_data/iterative-pruning-vgg-cifar10/{}.p".format(EXPERIMENT_NAME)
+# pruner_path = "experiment_data/iterative-pruning-norb-resnet/{}.p".format(EXPERIMENT_NAME)
 # pruner = pickle.load(open(pruner_path, 'rb'))
 
 # print('Retraining from random initialization...')
-# net_random = Network('VGG19',trainloader, testloader, device=device)
+# net_random = Network(trainloader, testloader, device=device)
 # net_random = net_random.to(device)
 
 # _masks = pruner.masks
@@ -248,12 +249,12 @@ for prune_epoch in range(pruning_iter):
 #     if stopped:
 #         break
 
-# torch.save(net_random.state_dict(), './checkpoints/iterative-pruning-vgg-cifar10/{}-rand-init-trained'.format(EXPERIMENT_NAME))
+# torch.save(net_random.state_dict(), './checkpoints/iterative-pruning-norb-resnet/{}-rand-init-trained'.format(EXPERIMENT_NAME))
 # save_data = {'train_losses': train_losses, 
 #              'val_losses': val_losses, 
 #              'train_accs': train_accs, 
 #              'val_accs': val_accs}
-# pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-vgg-cifar10/{}-rand-init.csv'.format(EXPERIMENT_NAME), index=None)
+# pd.DataFrame(save_data).to_csv('./experiment_data/iterative-pruning-norb-resnet/{}-rand-init.csv'.format(EXPERIMENT_NAME), index=None)
 
 print('Done')
 

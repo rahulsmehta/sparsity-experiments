@@ -1,5 +1,9 @@
-ResNet Experiments
+Sparse Transfer Learning via Winning Lottery Tickets
 =============================
+
+Paper: https://arxiv.org/abs/1905.07785
+
+This repository contains code for reproducing experiments in Sparse Transfer Learning via Winning Lottery Tickets.
 
 # Connecting to AWS
 Ensure that the following environment variables are set (easiest way to do this is consolidate these in an `~/.aws_config` file that is read in your `bash_profile`). For instance:
